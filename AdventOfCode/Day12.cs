@@ -40,13 +40,12 @@ namespace AdventOfCode
 			if (value is JObject)
 			{
 				JObject obj = (JObject)value;
-				if (
-					obj.AsJEnumerable()
-					   .OfType<JProperty>()
-					   .Any(
-						   jv =>
-							   jv.Value is JValue && ((JValue)jv.Value).Value is string &&
-							   (string)((JValue)jv.Value).Value == "red"))
+				if (obj.AsJEnumerable()
+				       .OfType<JProperty>()
+				       .Any(
+					       jv =>
+						       jv.Value is JValue && ((JValue)jv.Value).Value is string &&
+						       (string)((JValue)jv.Value).Value == "red"))
 					return 0;
 
 				return obj.AsJEnumerable().Sum(Count);
