@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
+using MoreLinq;
 
 namespace AdventOfCode
 {
@@ -10,11 +11,11 @@ namespace AdventOfCode
 		{
 			var dict = Parse(input);
 
-			int best = Permutations(dict.Keys.ToArray())
+			int best = dict.Keys.Permutations()
 				.Select(p =>
 				        {
 					        int change = 0;
-					        for (int i = 0, j = p.Length - 1; i < p.Length; j = i++)
+					        for (int i = 0, j = p.Count - 1; i < p.Count; j = i++)
 					        {
 						        change += dict[p[j]][p[i]];
 						        change += dict[p[i]][p[j]];
@@ -51,35 +52,6 @@ namespace AdventOfCode
 			return dict;
 		}
 
-		public static IEnumerable<T[]> Permutations<T>(T[] values, int fromInd = 0)
-		{
-			if (fromInd + 1 == values.Length)
-				yield return values;
-			else
-			{
-				foreach (var v in Permutations(values, fromInd + 1))
-					yield return v;
-
-				for (var i = fromInd + 1; i < values.Length; i++)
-				{
-					SwapValues(values, fromInd, i);
-					foreach (var v in Permutations(values, fromInd + 1))
-						yield return v;
-					SwapValues(values, fromInd, i);
-				}
-			}
-		}
-
-		private static void SwapValues<T>(T[] values, int pos1, int pos2)
-		{
-			if (pos1 != pos2)
-			{
-				T tmp = values[pos1];
-				values[pos1] = values[pos2];
-				values[pos2] = tmp;
-			}
-		}
-
 		public static int Part2(string[] input)
 		{
 			var dict = Parse(input);
@@ -90,11 +62,11 @@ namespace AdventOfCode
 				dict["me"][other] = 0;
 			}
 
-			int best = Permutations(dict.Keys.ToArray())
+			int best = dict.Keys.Permutations()
 				.Select(p =>
 				        {
 					        int change = 0;
-					        for (int i = 0, j = p.Length - 1; i < p.Length; j = i++)
+					        for (int i = 0, j = p.Count - 1; i < p.Count; j = i++)
 					        {
 						        change += dict[p[j]][p[i]];
 						        change += dict[p[i]][p[j]];
