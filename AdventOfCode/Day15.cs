@@ -1,0 +1,76 @@
+﻿using System;
+using System.Collections.Concurrent;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace AdventOfCode
+{
+	internal static class Day15
+	{
+		public static long Part1()
+		{
+			long max = long.MinValue;
+			for (int x = 0; x <= 100; x++)
+			{
+				int remainingY = 100 - x;
+				for (int y = 0; y <= remainingY; y++)
+				{
+					int remainingZ = 100 - x - y;
+					for (int z = 0; z <= remainingZ; z++)
+					{
+						int w = 100 - x - y - z;
+						if (x + y + z + w != 100)
+							continue;
+
+						long capacity = x*5 + y*-1 + w*-1;
+						long durability = x*-1 + y*3 + z*-1;
+						long flavor = z*4;
+						long texture = w*2;
+
+						long score = Math.Max(0, capacity)*Math.Max(0, durability)*Math.Max(0, flavor)*
+						             Math.Max(0, texture);
+
+						max = Math.Max(max, score);
+					}
+				}
+			}
+
+			return max;
+		}
+
+		public static long Part2()
+		{
+			long max = long.MinValue;
+			for (int x = 0; x <= 100; x++)
+			{
+				int remainingY = 100 - x;
+				for (int y = 0; y <= remainingY; y++)
+				{
+					int remainingZ = 100 - x - y;
+					for (int z = 0; z <= remainingZ; z++)
+					{
+						int w = 100 - x - y - z;
+						if (x + y + z + w != 100)
+							continue;
+
+						long calories = x*5 + y*1 + z*6 + w*8;
+						if (calories != 500)
+							continue;
+
+						long capacity = x*5 + y*-1 + w*-1;
+						long durability = x*-1 + y*3 + z*-1;
+						long flavor = z*4;
+						long texture = w*2;
+
+						long score = Math.Max(0, capacity)*Math.Max(0, durability)*Math.Max(0, flavor)*
+						             Math.Max(0, texture);
+
+						max = Math.Max(max, score);
+					}
+				}
+			}
+
+			return max;
+		}
+	}
+}

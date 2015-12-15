@@ -47,8 +47,7 @@ namespace AdventOfCode
 				                             }).ToList();
 
 				int maxDistance = distances.Max(d2 => d2.Distance);
-				foreach (int deer in
-						distances.Where(d => d.Distance == maxDistance).Select(d => d.Index))
+				foreach (int deer in distances.Where(d => d.Distance == maxDistance).Select(d => d.Index))
 				{
 					if (!points.ContainsKey(deer))
 						points[deer] = 0;

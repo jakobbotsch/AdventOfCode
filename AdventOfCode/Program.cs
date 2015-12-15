@@ -36,11 +36,6 @@ namespace AdventOfCode
 			}
 
 			string inputPath = $"Input\\Day{day}.txt";
-			if (!File.Exists(inputPath))
-			{
-				Console.WriteLine("Day {0} has no input", day);
-				return;
-			}
 
 			object part1Result;
 			bool any = false;
@@ -71,9 +66,30 @@ namespace AdventOfCode
 			}
 
 			ParameterInfo[] pars = method.GetParameters();
+			if (pars.Length == 0)
+			{
+				if (method.IsStatic)
+					result = method.Invoke(null, new object[0]);
+				else
+				{
+					object instance = Activator.CreateInstance(@class, true);
+					result = method.Invoke(instance, new object[0]);
+				}
+
+				return true;
+			}
+
 			if (pars.Length != 1 || pars[0].ParameterType != typeof(string) && pars[0].ParameterType != typeof(string[]))
 			{
 				Console.WriteLine("{0}.{1} has unsupported parameters", @class.FullName, methodName);
+				result = null;
+				return false;
+			}
+
+			if (!File.Exists(inputPath))
+			{
+				Console.WriteLine("Cannot invoke {0}.{1} as there is no input for it", @class.FullName,
+				                  methodName);
 				result = null;
 				return false;
 			}
