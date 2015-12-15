@@ -37,19 +37,19 @@ namespace AdventOfCode
 
 			string inputPath = $"Input\\Day{day}.txt";
 
-			object part1Result;
 			bool any = false;
-			if (RunDayMethod(@class, "Part1", inputPath, out part1Result))
+			for (int i = 1;; i++)
 			{
-				Console.WriteLine("Part 1: {0}", part1Result);
-				any = true;
-			}
-
-			object part2Result;
-			if (RunDayMethod(@class, "Part2", inputPath, out part2Result))
-			{
-				Console.WriteLine("Part 2: {0}", part2Result);
-				any = true;
+				object result;
+				if (RunDayMethod(@class, "Part" + i, inputPath, out result))
+				{
+					Console.WriteLine("Part {0}: {1}", i, result);
+					any = true;
+				}
+				else
+				{
+					break;
+				}
 			}
 
 			if (!any)

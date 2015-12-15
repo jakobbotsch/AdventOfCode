@@ -22,13 +22,7 @@ namespace AdventOfCode
 						if (x + y + z + w != 100)
 							continue;
 
-						long capacity = x*5 + y*-1 + w*-1;
-						long durability = x*-1 + y*3 + z*-1;
-						long flavor = z*4;
-						long texture = w*2;
-
-						long score = Math.Max(0, capacity)*Math.Max(0, durability)*Math.Max(0, flavor)*
-						             Math.Max(0, texture);
+						var score = ComputeScore(x, y, w, z);
 
 						max = Math.Max(max, score);
 					}
@@ -36,6 +30,18 @@ namespace AdventOfCode
 			}
 
 			return max;
+		}
+
+		private static long ComputeScore(int sprinkles, int peanutButter, int frosting, int sugar)
+		{
+			long capacity = sprinkles*5 + peanutButter*-1 + frosting*-1;
+			long durability = sprinkles*-1 + peanutButter*3 + sugar*-1;
+			long flavor = sugar*4;
+			long texture = frosting*2;
+
+			long score = Math.Max(0, capacity)*Math.Max(0, durability)*Math.Max(0, flavor)*
+			             Math.Max(0, texture);
+			return score;
 		}
 
 		public static long Part2()
@@ -71,6 +77,12 @@ namespace AdventOfCode
 			}
 
 			return max;
+		}
+
+		public static long Part3()
+		{
+			// https://www.reddit.com/r/adventofcode/comments/3wxaoo/day_15_part3_kilogram_cookie/
+
 		}
 	}
 }
