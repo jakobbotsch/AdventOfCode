@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Concurrent;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Combinatorics.Collections;
 
 namespace AdventOfCode
 {
@@ -63,13 +65,7 @@ namespace AdventOfCode
 						if (calories != 500)
 							continue;
 
-						long capacity = x*5 + y*-1 + w*-1;
-						long durability = x*-1 + y*3 + z*-1;
-						long flavor = z*4;
-						long texture = w*2;
-
-						long score = Math.Max(0, capacity)*Math.Max(0, durability)*Math.Max(0, flavor)*
-						             Math.Max(0, texture);
+						long score = ComputeScore(x, y, z, w);
 
 						max = Math.Max(max, score);
 					}
@@ -77,12 +73,6 @@ namespace AdventOfCode
 			}
 
 			return max;
-		}
-
-		public static long Part3()
-		{
-			// https://www.reddit.com/r/adventofcode/comments/3wxaoo/day_15_part3_kilogram_cookie/
-
 		}
 	}
 }
