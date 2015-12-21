@@ -22,32 +22,26 @@ namespace AdventOfCode
 				if (BitCount(rings) > 2)
 					continue;
 
-				Trial(ref best, weapon, armor, rings, false);
+				Trial(ref best, i, false);
 			}
 
 			return best;
 		}
 
-		private static readonly Item[] s_weapons =
+		private static readonly Item[] s_items =
 		{
 			new Item(8, 4, 0),
 			new Item(10, 5, 0),
 			new Item(25, 6, 0),
 			new Item(40, 7, 0),
 			new Item(74, 8, 0),
-		};
 
-		private static readonly Item[] s_armor =
-		{
 			new Item(13, 0, 1),
 			new Item(31, 0, 2),
 			new Item(53, 0, 3),
 			new Item(75, 0, 4),
 			new Item(102, 0, 5),
-		};
 
-		private static readonly Item[] s_rings =
-		{
 			new Item(25, 1, 0),
 			new Item(50, 2, 0),
 			new Item(100, 3, 0),
@@ -55,42 +49,22 @@ namespace AdventOfCode
 			new Item(40, 0, 2),
 			new Item(80, 0, 3),
 		};
-		private static void Trial(ref int best, int weapon, int armor, int rings, bool part2)
+
+		private static void Trial(ref int best, int config, bool part2)
 		{
 			int damageScore = 0;
 			int armorScore = 0;
 
 			int gold = 0;
-			for (int i = 0; i < 5; i++)
+			for (int i = 0; i < 16; i++)
 			{
-				if ((weapon & (1 << i)) != 0)
+				if ((config & (1 << i)) != 0)
 				{
-					damageScore += s_weapons[i].Damage;
-					armorScore += s_weapons[i].Armor;
-					gold += s_weapons[i].Cost;
+					damageScore += s_items[i].Damage;
+					armorScore += s_items[i].Armor;
+					gold += s_items[i].Cost;
 				}
 			}
-
-			for (int i = 0; i < 5; i++)
-			{
-				if ((armor & (32 << i)) != 0)
-				{
-					damageScore += s_armor[i].Damage;
-					armorScore += s_armor[i].Armor;
-					gold += s_armor[i].Cost;
-				}
-			}
-
-			for (int i = 0; i < 6; i++)
-			{
-				if ((rings & (1024 << i)) != 0)
-				{
-					damageScore += s_rings[i].Damage;
-					armorScore += s_rings[i].Armor;
-					gold += s_rings[i].Cost;
-				}
-			}
-
 			int myHP = 100;
 			int bossHP = 109;
 			int bossDamage = 8;
@@ -164,7 +138,7 @@ namespace AdventOfCode
 				if (BitCount(rings) > 2)
 					continue;
 
-				Trial(ref best, weapon, armor, rings, true);
+				Trial(ref best, i, true);
 			}
 
 			return best;
