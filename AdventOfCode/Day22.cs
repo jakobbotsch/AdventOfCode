@@ -66,7 +66,7 @@ namespace AdventOfCode
 						t.Turns--;
 					}
 
-				effects.RemoveAll(e => e.Turns <= 0);
+					effects.RemoveAll(e => e.Turns <= 0);
 				};
 
 			int manaSpent = 0;
