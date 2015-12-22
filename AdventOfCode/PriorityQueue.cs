@@ -43,7 +43,7 @@ namespace AdventOfCode
 			set
 			{
 				if (value < Count)
-					throw new ArgumentOutOfRangeException("value");
+					throw new ArgumentOutOfRangeException(nameof(value));
 
 				Resize(value);
 			}
@@ -120,22 +120,26 @@ namespace AdventOfCode
 
 		private void BubbleUp(int index)
 		{
+			T item = _items[index];
 			// Parent is always at floor((index - 1) / 2)
 			while (index != 0)
 			{
 				int parent = (index - 1) / 2;
 
-				if (_comparer.Compare(_items[index], _items[parent]) <= 0)
+				if (_comparer.Compare(item, _items[parent]) <= 0)
 					break; // Item is smaller than parent
 
-				Swap(ref _items[index], ref _items[parent]);
+				_items[index] = _items[parent];
 				index = parent;
 			}
+
+			_items[index] = item;
 		}
 
 		private void BubbleDown(int index)
 		{
 			// Children are at index * 2 + 1 and index * 2 + 2
+			T item = _items[index];
 			while (true)
 			{
 				int left = index * 2 + 1;
@@ -148,20 +152,15 @@ namespace AdventOfCode
 				if (right < Count && _comparer.Compare(_items[right], _items[left]) > 0)
 					largestChild = right;
 
-				if (_comparer.Compare(_items[index], _items[largestChild]) >= 0)
+				if (_comparer.Compare(item, _items[largestChild]) >= 0)
 					break; // Item is larger than both children
 
 				// Child is larger than item
-				Swap(ref _items[index], ref _items[largestChild]);
+				_items[index] = _items[largestChild];
 				index = largestChild;
 			}
-		}
 
-		private static void Swap<TVal>(ref TVal left, ref TVal right)
-		{
-			TVal temp = left;
-			left = right;
-			right = temp;
+			_items[index] = item;
 		}
 	}
 }

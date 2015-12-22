@@ -2,28 +2,29 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Text;
 using System.Xml.XPath;
 
 namespace AdventOfCode
 {
 	internal static partial class Day22
 	{
-		private static int BossHP = 58;
-		private static int BossDamage = 9;
+		private const int BossHp = 58;
+		private const int BossDamage = 9;
 
-		private static int Part3()
+		public static string Part3()
 		{
 			// Note: This is part 1 but done with an exhaustive Dijkstra's search
 			return DijkstraSearch(false);
 		}
 
-		private static int Part4()
+		public static string Part4()
 		{
 			// Part 2 with Dijkstra
 			return DijkstraSearch(true);
 		}
 
-		private static int DijkstraSearch(bool part2)
+		private static string DijkstraSearch(bool part2)
 		{
 			PriorityQueue<SearchNode> toVisit =
 				new PriorityQueue<SearchNode>(comparer: SearchNode.CostComparer);
@@ -34,12 +35,35 @@ namespace AdventOfCode
 			{
 				SearchNode node = toVisit.ExtractMax();
 				if (node.Won)
-					return node.Cost;
+				{
+					int cost = node.Cost;
+					StringBuilder sb = new StringBuilder();
+					do
+					{
+						List<Spell> spells = new List<Spell>();
+
+						do
+						{
+							spells.Add(node.Cast);
+							node = node.Parent;
+						} while (node != null);
+
+						spells.Reverse();
+
+						sb.AppendLine(string.Join(" -> ", spells) + " (cost " + cost + ")");
+						if (toVisit.Count <= 0)
+							break;
+
+						node = toVisit.ExtractMax();
+					} while (node.Cost == cost);
+
+					return sb.Remove(sb.Length - 2, 2).ToString();
+				}
 
 				AddNeighbors(node, toVisit, part2);
 			}
 
-			return -1;
+			return "No solution found";
 		}
 
 		private static void AddNeighbors(SearchNode parent, PriorityQueue<SearchNode> toVisit, bool part2)
@@ -81,7 +105,7 @@ namespace AdventOfCode
 			}
 			else
 			{
-				lastNode.BossHP = BossHP;
+				lastNode.BossHP = BossHp;
 				lastNode.PlayerHP = 50;
 				lastNode.PlayerMana = 500;
 			}
