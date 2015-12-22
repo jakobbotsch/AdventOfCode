@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace AdventOfCode
 {
-	internal static class Day22
+	internal static partial class Day22
 	{
 		private static readonly Random s_rand = new Random();
 

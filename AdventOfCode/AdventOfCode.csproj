@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Day1.cs" />
+    <Compile Include="Day22.Dijkstra.cs" />
     <Compile Include="Day22.cs" />
     <Compile Include="Day21.cs" />
     <Compile Include="Day20.cs" />
@@ -78,6 +79,7 @@
     <Compile Include="Day4.cs" />
     <Compile Include="Day3.cs" />
     <Compile Include="Day2.cs" />
+    <Compile Include="PriorityQueue.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
