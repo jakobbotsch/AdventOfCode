@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.IO;
 using System.Reflection;
 
@@ -41,9 +42,13 @@ namespace AdventOfCode
 			for (int i = 1;; i++)
 			{
 				object result;
-				if (RunDayMethod(@class, "Part" + i, inputPath, out result))
+				TimeSpan time;
+				if (RunDayMethod(@class, "Part" + i, inputPath, out result, out time))
 				{
-					Console.WriteLine("Part {0}: {1}", i, result);
+					Console.WriteLine("Part {0}:", i);
+					Console.WriteLine("Time: {0:F2} ms", time.TotalMilliseconds);
+					Console.WriteLine("Result: {0}", result);
+					Console.WriteLine();
 					any = true;
 				}
 				else
@@ -56,58 +61,68 @@ namespace AdventOfCode
 				Console.WriteLine("Could not execute any parts for day {0}", day);
 		}
 
-		private static bool RunDayMethod(Type @class, string methodName, string inputPath, out object result)
+		private static bool RunDayMethod(Type @class, string methodName, string inputPath,
+		                                 out object result, out TimeSpan time)
 		{
-			MethodInfo method = @class.GetMethod(methodName, BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Static | BindingFlags.Instance);
+			MethodInfo method = @class.GetMethod(methodName,
+			                                     BindingFlags.Public | BindingFlags.NonPublic |
+			                                     BindingFlags.Static | BindingFlags.Instance);
 			if (method == null)
 			{
 				result = null;
+				time = TimeSpan.Zero;
 				return false;
 			}
 
+			Func<object> toRun;
 			ParameterInfo[] pars = method.GetParameters();
 			if (pars.Length == 0)
 			{
 				if (method.IsStatic)
-					result = method.Invoke(null, new object[0]);
+					toRun = () => method.Invoke(null, new object[0]);
 				else
 				{
 					object instance = Activator.CreateInstance(@class, true);
-					result = method.Invoke(instance, new object[0]);
+					toRun = () => method.Invoke(instance, new object[0]);
+				}
+			}
+			else if (pars.Length == 1 &&
+			         (pars[0].ParameterType == typeof(string) || pars[0].ParameterType == typeof(string[])))
+			{
+				if (!File.Exists(inputPath))
+				{
+					Console.WriteLine("Cannot invoke {0}.{1} as there is no input for it", @class.FullName,
+					                  methodName);
+					result = null;
+					time = TimeSpan.Zero;
+					return false;
 				}
 
-				return true;
-			}
+				object input = pars[0].ParameterType == typeof(string)
+					? (object)File.ReadAllText(inputPath)
+					: File.ReadAllLines(inputPath);
 
-			if (pars.Length != 1 || pars[0].ParameterType != typeof(string) && pars[0].ParameterType != typeof(string[]))
+				if (method.IsStatic)
+				{
+					toRun = () => method.Invoke(null, new[] {input});
+				}
+				else
+				{
+					object instance = Activator.CreateInstance(@class, true);
+					toRun = () => method.Invoke(instance, new[] {input});
+				}
+			}
+			else
 			{
 				Console.WriteLine("{0}.{1} has unsupported parameters", @class.FullName, methodName);
 				result = null;
+				time = TimeSpan.Zero;
 				return false;
 			}
 
-			if (!File.Exists(inputPath))
-			{
-				Console.WriteLine("Cannot invoke {0}.{1} as there is no input for it", @class.FullName,
-				                  methodName);
-				result = null;
-				return false;
-			}
-
-			Func<object, object> invoke = input =>
-			                              {
-				                              if (method.IsStatic)
-					                              return method.Invoke(null, new[] {input});
-
-				                              object instance = Activator.CreateInstance(@class, true);
-				                              return method.Invoke(instance, new[] {input});
-			                              };
-
-			if (pars[0].ParameterType == typeof(string))
-				result = invoke(File.ReadAllText(inputPath));
-			else
-				result = invoke(File.ReadAllLines(inputPath));
-
+			Stopwatch timer = Stopwatch.StartNew();
+			result = toRun();
+			time = timer.Elapsed;
 			return true;
 		}
 	}
