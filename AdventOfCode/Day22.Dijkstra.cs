@@ -36,10 +36,22 @@ namespace AdventOfCode
 				SearchNode node = toVisit.ExtractMax();
 				if (node.Won)
 				{
-					int cost = node.Cost;
-					StringBuilder sb = new StringBuilder();
-					do
+					List<SearchNode> solutions = new List<SearchNode> {node};
+					while (toVisit.Count > 0)
 					{
+						var otherNode = toVisit.ExtractMax();
+						if (otherNode.Cost != node.Cost)
+							break;
+
+						if (otherNode.Won)
+							solutions.Add(otherNode);
+					}
+
+					StringBuilder sb = new StringBuilder();
+					for (int i = 0; i < Math.Min(10, solutions.Count); i++)
+					{
+						node = solutions[i];
+						int cost = node.Cost;
 						List<Spell> spells = new List<Spell>();
 
 						do
@@ -53,11 +65,12 @@ namespace AdventOfCode
 						sb.AppendLine(string.Join(" -> ", spells) + " (cost " + cost + ")");
 						if (toVisit.Count <= 0)
 							break;
+					}
 
-						node = toVisit.ExtractMax();
-					} while (node.Cost == cost);
+					if (solutions.Count > 10)
+						sb.AppendFormat("..and {0} more", solutions.Count - 10);
 
-					return sb.Remove(sb.Length - 2, 2).ToString();
+					return sb.ToString();
 				}
 
 				AddNeighbors(node, toVisit, part2);
