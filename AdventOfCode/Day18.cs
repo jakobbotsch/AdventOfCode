@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Linq;
-using Combinatorics.Collections;
 
 namespace AdventOfCode
 {

@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Data.SqlTypes;
 using System.Linq;
 using System.Text.RegularExpressions;
-using Combinatorics.Collections;
 
 namespace AdventOfCode
 {

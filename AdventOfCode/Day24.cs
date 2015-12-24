@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Combinatorics.Collections;
 
 namespace AdventOfCode
 {
@@ -25,8 +24,7 @@ namespace AdventOfCode
 			long best = long.MaxValue;
 			for (int i = 1; i <= packages.Count; i++)
 			{
-				Console.WriteLine(i);
-				foreach (IList<int> comb in new Combinations<int>(packages, i))
+				foreach (int[] comb in new Combinations<int>(packages, i))
 				{
 					int sum = comb.Sum();
 					if (sum != target)
@@ -34,9 +32,7 @@ namespace AdventOfCode
 
 					if (HasPartition(packages.Except(comb).ToList(), target, partitions - 1))
 					{
-						long mul = 1;
-						foreach (int j in comb)
-							mul = mul*j;
+						long mul = comb.Aggregate<int, long>(1, (current, j) => current*j);
 						best = Math.Min(best, mul);
 					}
 				}
@@ -52,7 +48,7 @@ namespace AdventOfCode
 		{
 			for (int i = 1; i <= packages.Count; i++)
 			{
-				foreach (IList<int> comb in new Combinations<int>(packages, i))
+				foreach (int[] comb in new Combinations<int>(packages, i))
 				{
 					if (comb.Sum() != target)
 						continue;
