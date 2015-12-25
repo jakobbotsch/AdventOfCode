@@ -55,6 +55,7 @@
   <ItemGroup>
     <Compile Include="Combinations.cs" />
     <Compile Include="Day1.cs" />
+    <Compile Include="Day25.cs" />
     <Compile Include="Day24.cs" />
     <Compile Include="Day23.cs" />
     <Compile Include="Day22.Dijkstra.cs" />
