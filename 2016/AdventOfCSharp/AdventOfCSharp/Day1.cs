@@ -33,8 +33,6 @@ namespace AdventOfCSharp
                 }
             }
 
-            int test = 5;
-
             Done:
             ;
         }

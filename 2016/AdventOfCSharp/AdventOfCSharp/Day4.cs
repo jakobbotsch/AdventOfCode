@@ -40,7 +40,6 @@ namespace AdventOfCSharp
         internal static void Solve2(string input)
         {
             Regex regex = new Regex("(?<name>.*)-(?<id>\\d+)\\[(?<check>.*)\\]");
-            int sum = 0;
             foreach (string line in input.Split(new[] { "\r\n"}, StringSplitOptions.None))
             {
                 var match = regex.Match(line);
