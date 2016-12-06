@@ -27,7 +27,7 @@ namespace AdventOfCSharp
 
         internal static void Solve2(string input)
         {
-            using (MD5CryptoServiceProvider md5 = new MD5CryptoServiceProvider())
+            using (MD5 md5 = MD5.Create())
             {
                 StringBuilder pass = new StringBuilder("________");
                 int mask = 0;
