@@ -6,7 +6,7 @@ namespace AdventOfCSharp
     {
         private static void Main(string[] args)
         {
-            Day18.Solve(".^^^^^.^^.^^^.^...^..^^.^.^..^^^^^^^^^^..^...^^.^..^^^^..^^^^...^.^.^^^^^^^^....^..^^^^^^.^^^.^^^.^^");
+            Day19.Solve2(3017957);
             Console.ReadLine();
         }
     }
