@@ -6,1247 +6,1006 @@ namespace AdventOfCode
     {
         internal static void Main(string[] args)
         {
-            Day7.Solve(@"bqyqwn (68) -> wscqe, cwxspl, syogw, xnxudsh
-ddswb (34)
-hnkvw (320)
-ibqmynm (252) -> oglcdgs, tkjofj, upurae, oypvhy, bzfkt, hdvcz, cfwxyl
-rkerea (87)
-lcmlbj (66)
-vtccvv (69)
-nachvlp (20)
-tmkli (66)
-exuyuk (82)
-ojzogs (79)
-egkiqcp (37) -> rxjnad, psetts
-xadjes (10)
-fivkqxx (121) -> acvzsbe, kkmax, qcmwsvm
-krgtrdn (53)
-mxemqqb (267) -> iuuouds, qqmvd
-iwwqvoa (24)
-yyecrv (59)
-zjpkoar (40)
-ilsgqdw (37)
-bmlfd (43)
-nxqwag (81)
-ubbwvvl (44)
-khfzis (48) -> ztxcc, bvejguc
-gvtcy (39)
-xbxxe (173) -> bzjxil, amklj
-qejgaf (25)
-uunpyb (82)
-dmidur (57)
-fklfgd (65)
-vcjfe (22)
-rkjfx (33)
-ioglbe (88)
-tymkixg (36)
-qbhhtw (90)
-afbrhy (79)
-nswcez (47)
-wzjonl (16)
-xviqup (95)
-claolm (312) -> ndmkbul, rpjfkh
-qhlhfk (387) -> iwwqvoa, rmshk, ftezz
-vtokttx (55)
-boalcdm (13)
-angpy (62) -> fitha, itxgz, pyiexlj, wqshh, rloxobx
-gwcdf (32)
-jpscxfh (46) -> qsakd, exuyuk, dqdmie, kjwfeoj
-qkzpcyy (96)
-fifams (415)
-yseezd (11)
-qcmwsvm (37)
-hfnhd (152) -> vdcfh, ufrhi
-wfgzr (82)
-sjoov (6)
-fonrb (7531) -> xohxq, cmsqe, jefsr
-pyhof (21)
-pplis (9)
-fosdh (90)
-pjkyydd (15)
-wvmtyez (46)
-bzfkt (66) -> rauho, xctuhbx
-zyqssjb (13) -> olebdv, byahs, xajzwdh
-wotus (119) -> dndrnc, tebkmhi, qejgaf
-rusndcc (39) -> xcfxvd, kvylxr, vwkegak, oiuztx
-stofi (16)
-mgqil (66) -> noibcw, nptqxtu
-qjzss (31)
-hawhqex (71)
-kjjee (174) -> lltgjo, gwcdf
-gdamb (99)
-diqdy (183) -> gackyrq, vcjfe, lcnsf
-sfwzqk (54) -> rkuzg, ewvvb
-vktjns (45)
-urwaex (59)
-nyouzhg (17) -> lofybs, baedi
-mklqpn (9)
-iktget (33)
-gxtfu (57)
-xkymbld (37) -> mqgbif, ptxfk
-qjeuqe (92)
-benqzp (92) -> wvmtyez, gmveehb
-rkctaq (20)
-sbwoye (50)
-bujufb (148) -> tduxvx, lxzvkpk, jllqymn, csrpy
-cwfydbh (369) -> qcmtgvr, tyvjs
-cjjytkr (305) -> trszl, fgzgfc
-qsakd (82)
-domway (2464) -> kgphv, pjujovx, hrdggo
-mrpji (61)
-kzrgfb (92)
-hocazx (818) -> bmukspb, mgbwxw, gyirkcj, kgxfc
-bobvssz (25) -> srvqt, alhghui, wnjaw, qhlhfk, lsbvzaf, qjkfys, nnncfl
-rrzyzq (76)
-eaufvn (78) -> dtazpb, nlajc
-tduix (18)
-yzcez (62) -> rlxto, vkaxa
-uvpuko (91)
-xtnmps (95) -> ptatzl, bujufb, oybbzr, zwopz, phqpwkw
-ibeis (54)
-ofkvpq (500) -> auvuxv, stqmwk, dptekr
-pmolg (166) -> uuunqk, uolqt
-byedxex (180) -> gsaqlad, ebwubc
-aicjff (67)
-vtcxw (860) -> ezlfnhs, aizdt, ylbftp
-nzuswm (80) -> ojzogs, qfopwo
-hgwbg (89)
-sflonq (190) -> gppwsbp, mpvgy
-pqiuhyp (52) -> xbtjl, jykseco, aftnyad, xaden, urdgg, ijkpfv, ejekn
-ccgjf (99)
-devsz (38)
-vmmtsr (33)
-ebwubc (70)
-mgcnohi (69)
-klege (92)
-jtlqxy (66)
-ofbqk (148)
-ewluica (22)
-mulvwn (290) -> ubbwvvl, jmuqp, dnovxt
-trlcj (245)
-uezwz (20)
-bbtnj (170) -> xvwok, rqyxzn
-ndticx (54) -> rbtco, bobvssz, umtxk, domway, wugia, ubvttg, ydpemw
-lxwkpqh (325) -> xoigv, fqsjaz
-mpvgy (35)
-ujgeml (94)
-jkoir (6)
-kemkz (98)
-dtqgdc (90)
-girxc (147) -> zylotoh, qtxmjwm
-olawkuc (79) -> earmfdp, wnowypb
-umrqldb (99)
-oyurlfq (57)
-flgpg (188) -> jimltsw, xhgza
-wawtrk (80)
-nlajc (85)
-ewqcktv (1364) -> hfnhd, amqvr, ntxcpwl
-dmvyuf (35)
-vtdbov (50)
-xnszvs (65)
-mjrktxe (50) -> eoxwp, jgsmitm, isrgei, rnbgz, kymbvpp, ktjdpt, mgzocpe
-zicvok (81)
-tkmfbk (93) -> ffhsg, kynezb
-vlwvot (84)
-oybbzr (1007) -> qstlv, nayvvrh, izxpf, habni, ckfefl, fjdlcbh, thhakxn
-qiksfr (44)
-wowxv (92)
-fmdba (44)
-zgxbjj (96)
-jncjxue (66)
-xquhgig (190) -> rqhfxty, maftysp
-habni (27) -> xwknab, xukfcd, scvhl, tcbgf
-iftcnc (50)
-dqdmie (82)
-otlvq (40) -> hjsrvj, rtbcch, vpirde
-mgzocpe (51) -> zkwajbd, mrpji
-fkzxb (89)
-jlsmm (32)
-igdkn (43) -> dgtxjuj, jxyakll, kptdem
-rftuf (43)
-uolqt (9)
-rtwlo (78) -> wgbvle, npttye, claolm, ydffzgu, mgbgb, jwjuth, mulvwn
-nrgzcge (132) -> bywbrk, vazoq, eaufvn
-juoaena (94)
-wfsaglg (54) -> nlfdps, tdkdiqe
-jfsgqq (100) -> crslvc, esized
-mcucysr (49)
-tcbgf (28)
-mlalrpt (166) -> jtbrjm, fyaxzl
-srvqt (155) -> jyftx, dtijfqc, phcqntb, uyhrcfl
-xohxq (1457) -> czbydf, wgdnyy
-lqbmor (230) -> rkjfx, vmmtsr
-jjsyexg (38)
-ynvesz (88) -> rqaxn, afntec
-ibbxb (194) -> imiimt, llikz
-ktasnia (49) -> thkjz, cjgtra, tzngdx, cqjsqh, vtjtyp, lyzaead, xrtzs
-vsjjq (30)
-yjnzgl (67)
-mcrhiy (6559) -> mkgafux, gugxitg, tymmo
-nlgymop (139) -> tymkixg, crchwpb
-ybosi (18)
-rhqfb (179) -> okurp, gpwbcg, invqsb
-kzjozhi (90)
-ixncawy (28)
-ooczbeh (36)
-ubvttg (796) -> wuuvnlz, donzb, bwgimi, rywtmt, rusndcc, ceagctk
-ohcoit (6)
-exrud (176) -> hpziqqg, abxglwt, gozhrsf, oqjqu, vhkodl
-opvrgh (79)
-blyms (46)
-vfrylx (10) -> qhkniqm, bmcwbsi
-ndmkbul (55)
-mohey (86) -> tbmyue, ibeis
-wktzh (93)
-ystgyng (50)
-jclntv (87)
-dsjcqpn (133) -> slufzy, gbbpqj, jxawk
-fitha (68) -> faqngn, xguqqao, athuly, fmdsfus
-xyang (225) -> njxrb, mfwuqb
-acjedny (49)
-mfwuqb (60)
-ayuma (81)
-qqmchoq (7)
-yzjhmqq (171) -> dinpz, upozls
-qfopwo (79)
-srypr (64)
-tvwmzal (236) -> cpujsn, ewluica
-umtxk (2942) -> jyazs, scnhwcs, fmpvv, aahqvqy
-gkwyfz (49)
-dodrbx (227) -> uhtnl, vxnsova
-sfdclf (238)
-kksizqf (44)
-dfofyir (236) -> ddswb, grxdbx
-qakiz (37)
-ceagctk (255) -> bwvlnlt, rkazlp, vbejzc, njhlrtm
-hnjszii (284) -> zkdwz, bwlit
-gbbpqj (34)
-bvaoy (114) -> mogwbda, rodntl
-vkihn (36)
-symdxo (8)
-nduildw (30)
-nxhfgx (18)
-chgfb (16)
-gugaaiq (40)
-euvrdg (79)
-ckzaj (67)
-jupzgjm (90)
-llalaql (27)
-qdnghwn (16)
-iffluz (515) -> bbbvmxo, reomle, vspqi
-nvrjzg (214) -> nzfko, qqmchoq
-xvwok (34)
-enmjipp (95)
-jtbrjm (18)
-rlxto (83)
-xpotznx (41)
-lslhph (59)
-vhkodl (221) -> otlvq, fioegdo, rreidgp, fivkqxx, xahvbm
-mncivb (88)
-hbhfdlh (89)
-mkgafux (688) -> admjq, tqtut, emkgc
-tymmo (22) -> uxjaa, nlgymop, dcvfkk, yzjhmqq, iqjqlfq, faopk
-vxslvq (37) -> jmvcgo, ioglbe
-rxjnad (80)
-ejdxula (92) -> kviiza, uqmaluk, nasbs
-xvzoy (35)
-vukpdsr (162) -> gumncu, mlzmimg, vjobpzv
-xoigv (10)
-iuehdsr (21)
-jzgvab (9)
-odxpup (89)
-vwkegak (92)
-bsvgagj (41)
-mxwgu (310) -> yeyxf, qdnghwn
-jynmg (1140) -> wotus, mohey, fiynyre
-qftwuv (36)
-veabcj (67)
-zaargo (30) -> ytrsmfx, jtlqxy
-xfbfvuu (65)
-gpwbcg (5)
-elysbb (81)
-engpslr (85)
-tqbtvqc (31)
-faqngn (98)
-jykseco (166) -> xawzbz, fsdoohr
-nfywcyp (62)
-rreidgp (168) -> vfupn, xyvnk
-obmcr (89)
-spnllx (76)
-mbbuqoi (35)
-wjxgg (177) -> symdxo, dsptf, yaxeloo, yxrhis
-chcjswk (89)
-anamgt (346) -> ywwxi, rnbvid
-zjwqc (26)
-wxgoew (1481) -> hnjszii, ygqxl, xhkwrs
-dydcy (76) -> drnki, uxolsws, lrcstqr
-npttye (42) -> wkrgvo, jhydv, enmjipp, hnyjyga
-yjwvnhl (219)
-fykgs (43)
-vrmqym (97) -> lrmnb, nvigovl
-gkfdg (226) -> ohcoit, jkoir
-ictsk (122) -> devsz, jjsyexg
-gixezcy (37)
-rywtmt (158) -> nevrtrs, sybvdj, qcorw
-pwhtvdh (40)
-yapfoe (59)
-xnnbqju (90) -> xzsmw, petvm, xyxidwf
-vxiwms (99)
-htaszsq (87)
-mgbwxw (52) -> afbrhy, jrsfu
-rdzsisf (59)
-qvxanzu (262) -> nxhfgx, vvzmdr, inddon, ybosi
-ysbhsn (181) -> wleavrv, kmvvxon
-tirifqs (6489) -> ofbqk, iqdiez, kspsz, kejph
-rnkbli (84)
-bjbndbg (169) -> oqsdzpe, sbwoye, yhukqf
-dndrnc (25)
-oxzhz (86) -> bcbftl, hjzgzoe
-ufrhi (68)
-gsyeaes (26)
-kgbzu (180) -> wzczb, bzqjb
-dgtxjuj (97)
-xulgx (5)
-wleavrv (16)
-qnhbmzp (118) -> wktzh, zodwdpq
-csrpy (62) -> zmoxc, ccgjf, umrqldb, gdamb
-ldqyt (50)
-btwmd (54)
-volompq (96)
-qmshniw (443)
-lrmnb (98)
-yijwaf (32)
-paoxff (98)
-ulbute (95)
-lyzaead (939) -> jfqddfd, ucpkpfb, sbmwazv
-rodntl (60)
-tykcvi (9)
-aftnyad (188) -> rfqddq, recxxj
-zdelqb (155) -> jaasf, snqnh
-akwcv (65)
-nszqngg (44)
-eavas (45) -> ytsmc, mrxdp, prjpkm, nzawh
-fqvbdq (96) -> tzimies, jduij
-mabcqcb (194) -> itutdol, vtokttx
-trvtkqj (49)
-ynlzggk (36)
-pggjo (19)
-jajdx (19)
-ackyirz (16)
-gtiopzn (49)
-idvnxqp (5)
-njsjq (273) -> vptdap, eteyvz
-qkjdjpe (44)
-dzfon (61) -> wksjlix, zicvok, utiwem
-nxmhned (166) -> pekohn, xnszvs
-pnqycz (43) -> gkkit, khyca, yudzxoa
-lvkeqm (192) -> lneyu, uopxjn
-qvrvcu (19)
-hvwyae (23)
-ocgbpez (114) -> gjgrhw, bvtgvu
-mehuxr (53)
-pmdcajx (7)
-ybixf (299) -> xvhgvw, ooczbeh, ksbwlir, pkzwosb
-inlft (36)
-hshafy (65)
-nzfko (7)
-vcnael (95)
-nxuer (13)
-pulql (59) -> akwcv, uijffti, ysxvzdu, xfbfvuu
-hlbotz (13)
-zhrdezs (28)
-aqxaecv (297)
-ppjapn (27)
-bbbvmxo (21) -> rceksnv, uhnlse, rswnjx, ogcmm
-ikvzux (44)
-hdvcz (156) -> zisdcf, keurs, bjops
-ytsmc (22)
-jiwfia (13)
-jthpj (44)
-dtijfqc (76)
-vgfhpwb (99)
-sjmhuxn (11) -> aceyee, iohigm, zildb, vrmqym, pxxabj, gjjfx
-byahs (65)
-qllime (202) -> dspkk, wgtnepi
-ksbwlir (36)
-hzawlq (16)
-kgwftu (87)
-qtzelhq (62)
-wabzx (209) -> sfazwz, lnndami
-dyazidi (219)
-resoi (25)
-hgwkyu (91)
-urdgg (166) -> srypr, fnayjx
-hsfhqhe (17)
-metif (68)
-ifxzdfy (96) -> ssnpxj, ejhojmh
-jefsr (477) -> fqvbdq, xsygbj, rcluk, dcero, lfgqgs
-oglcdgs (140) -> dmvyuf, xvzoy
-jrhzmbj (45)
-mlvhqpe (91) -> qsstg, tnrrui, utsnke, gxtfu
-iffxdk (87)
-xboqv (17)
-hppxlu (174) -> lkjhmiq, kntwy, auhnyn
-pralyx (191) -> dmkfnm, xcmzg
-osnkrr (53)
-nhvyso (77)
-mogwbda (60)
-rqaxn (96)
-vxnsova (5)
-xsxnizc (50)
-hskhxx (36)
-ogcmm (57)
-drnki (25)
-ecjxs (197)
-dnniv (16)
-wnjaw (369) -> brvxyyg, hsvmept, praagwp
-xjcxk (24)
-aahqvqy (74)
-hpwaux (97)
-sadyx (59)
-dptekr (112) -> xiqthw, ihtfo
-mlmhe (4563) -> uwxjkq, uqals, ofkvpq, pyxdkm
-yytmc (66)
-hmbuu (16)
-ezzpr (94)
-zpxgfq (118) -> tqplqn, fysxwmd
-hgkmod (75)
-earmfdp (83)
-mxpgmte (5)
-kcfgbv (73) -> fdeowqq, pbzvjg, tzrqwt
-jtxjj (120) -> hiuviy, sadyx
-dsptf (8)
-dsezlbe (54)
-onzind (245) -> wayzzn, ystgyng
-pjndde (422) -> yseezd, cseckdt
-rnbgz (131) -> iuehdsr, xgzluhk
-yswonja (195) -> gachtig, bjadb, gtiopzn
-piizso (59)
-msqxo (47)
-jacmj (29)
-hjsrvj (64)
-prcxksh (20)
-aceyee (219) -> gixezcy, zqwqcnq
-pkipy (95)
-czbydf (75)
-bpguivk (32)
-utapoe (84)
-qjdou (87)
-njhlrtm (38)
-pkzwosb (36)
-wpphwjv (83)
-teqej (66)
-lneyu (64)
-dicalia (44)
-opzxu (46)
-gasejp (15)
-llikz (22)
-uhtnl (5)
-kntwy (25)
-wzbewii (157) -> myetb, dhwakp, vqtalpm
-vkaxa (83)
-kwnqw (49)
-uhnlse (57)
-zqamk (37518) -> mflijpx, ikzap, wzimze, agjpn
-fnnykbh (91) -> nxqwag, tpcbt, elysbb, xlaqpg
-ytrsmfx (66)
-pyiexlj (92) -> oozbxqb, kzrgfb, klege, csfjt
-yaxeloo (8)
-tzbmy (71)
-pjecv (56)
-gsaqlad (70)
-gmzcjo (76)
-cuscn (114) -> fmdba, ikvzux
-rbzmniw (52959) -> tespoy, tirifqs, exrud
-jzoxv (52)
-egizyey (78) -> metif, towuup
-uxolsws (25)
-twyhx (86)
-nqjydpi (44) -> rpgzp, nszqngg, jthpj, qiksfr
-avecfoq (95)
-wltax (21)
-xfyqx (20)
-tnrrui (57)
-gmveehb (46)
-kymbvpp (67) -> qzvobt, osnkrr
-xbccghy (66)
-iqdiez (134) -> wkkmvcn, nkzgse
-pmopji (128) -> gpcyq, qsdyww
-cfwxyl (210)
-khzqqwi (12)
-wjrhp (992) -> nyouzhg, ccxff, qmifv, oonpy, vutdji, owukmji
-yvlajs (35)
-hkltivy (26)
-vylzag (33)
-mieynp (21)
-jppbvbo (929) -> ynvesz, tvwmzal, mbwaxn
-yxxgd (296)
-utiwem (81)
-ihvefep (110) -> ffzzzc, ckzaj, zfyqzi
-vfupn (32)
-jhydv (95)
-vspqi (201) -> wzjonl, dnniv, pdazlob
-iohigm (248) -> icxzod, mclqrmw, pjkyydd
-hzehjo (43)
-kwhgtnk (78)
-npxexv (66)
-lycfbo (89)
-vezhmd (47)
-amqvr (274) -> aditjen, xvdmeo
-vbqpp (35)
-upurae (33) -> rdzsisf, lslhph, urwaex
-uvkwg (88)
-wapknj (2443) -> xulgx, idvnxqp
-mvgmf (105) -> dicalia, qhkhuow, phnuqn
-qmifv (163) -> hzawlq, ackyirz
-xlacmu (87)
-aesiz (86)
-jjiikvt (25)
-prjpkm (22)
-rbtco (1110) -> dfofyir, qnhbmzp, dzfon, zmdkea, valby, mabcqcb, mifwbmm
-greav (20)
-dmkfnm (30)
-ftezz (24)
-iuuouds (14)
-jwjuth (390) -> hmbuu, oxlzlor
-gzwrv (212) -> efqjc, gasejp, qqooh
-wgdnyy (75)
-rqhfxty (53)
-qhpvuzi (75)
-cvxqnh (53)
-stqmwk (96) -> vcnael, dhobx
-wuuvnlz (206) -> pznkdcr, ucfipvi, jfhzgp
-nnyws (190)
-bbbhx (5)
-qdfvw (69) -> hgwkyu, uvpuko, wclnx
-inddon (18)
-gyirkcj (138) -> inlft, vkihn
-lrtzi (53)
-pjlxc (62)
-slufzy (34)
-zkdwz (20)
-tigvdj (44217) -> xtnmps, ylnobx, mlmhe
-vptdap (23)
-aemkbp (35) -> dwrtbo, rkerea, iffxdk
-dpngy (17)
-nzhbfc (207) -> hvgozl, hsfhqhe
-wayzzn (50)
-myhnuu (66)
-jrsfu (79)
-gqeiy (257) -> opvrgh, sibvtz
-xgzluhk (21)
-fiynyre (156) -> mieqogh, zpaivc
-vqtalpm (26)
-thkjz (437) -> insleik, ayjse, sgovqnf, wjxgg, euwab
-ylbftp (82) -> epcjds, gsyeaes
-ndikjqv (22)
-tqplqn (36)
-aifpxqv (89)
-hjbfr (20)
-lltgjo (32)
-picnycy (33)
-kplvk (24)
-ptatzl (314) -> sfdclf, ibbxb, slzpby, kjjee, bbtnj, gkfdg, nzuswm
-qtxmjwm (7)
-ckudisa (78)
-opskc (35)
-qhkniqm (96)
-rqyxzn (34)
-vdcfh (68)
-hpziqqg (637) -> ypqkl, nmazby, hxswr
-vrfme (20)
-ozdnanh (34)
-qcmtgvr (12)
-gvdlvgg (20)
-krnbkr (82) -> qladcl, tefdmi, ocdpr
-fyxttac (39)
-hbbpp (95)
-hjzgzoe (38)
-hjqsj (85)
-asevk (44) -> hpwaux, byojhfr
-fgzgfc (44)
-ejtdhx (57)
-ntxcpwl (36) -> kerjk, nggubzz, utapoe
-fqsjaz (10)
-hxswr (74) -> bixxpzd, htaszsq
-dinpz (20)
-yxxdal (44)
-wozakri (251) -> mgcpbp, omslcm
-dhwakp (26)
-kvylxr (92)
-lsbvzaf (75) -> ibqrz, cokvree, volompq, zgxbjj
-bixxpzd (87)
-xbtjl (294)
-dyfzj (95)
-utsnke (57)
-sxjlr (91)
-ckfefl (115) -> khzqqwi, fzwzr
-ezlfnhs (62) -> qftwuv, ynlzggk
-xguqqao (98)
-jazqb (7378) -> xadcuw, hocazx, cqvdpy
-dsmjo (32)
-gpcyq (55)
-dhvsrt (7)
-jllqymn (110) -> dzwfsix, paeel, jclntv, qjdou
-zkgdtp (90)
-mjqkaqs (50)
-nzcqte (140) -> wkkdc, pwhtvdh, gugaaiq
-woypnze (91)
-dcriqom (79)
-zppujp (34)
-aqacmr (18)
-rkazlp (38)
-fysxwmd (36)
-mzutqi (571) -> qdfvw, mxwgu, yswonja
-zfyqzi (67)
-wqshh (460)
-rztur (86)
-bdlnohy (584) -> dodrbx, qwotm, cbavt, mvgmf, igcmpn
-qqmvd (14)
-uwxge (94)
-ijkpfv (218) -> rxcgwd, steez
-slzpby (136) -> nxxlbnt, ozdnanh, zppujp
-dzuqljn (7) -> spnllx, fpeiss, hjzkjuw, pjoqde
-dporud (50)
-hrdggo (152) -> agztuz, mehuxr
-kigyp (65) -> hjqsj, ijtis, engpslr
-qcorw (83)
-cmsqe (12) -> njsjq, zqpxn, pulql, fkttd, wozakri
-keurs (18)
-pyxdkm (872) -> xnnbqju, oxzhz, zaargo
-pjhpwh (35)
-vdlbwyo (24)
-ocdpr (44)
-gacseeh (89)
-xzsmw (24)
-liujmc (41)
-myetb (26)
-xawzbz (64)
-qmyfg (114) -> weipv, woypnze
-heisrl (36)
-mlzmimg (24)
-ayjse (75) -> veabcj, aicjff
-htitjjt (203) -> nswcez, msqxo
-xhkwrs (324)
-tdkdiqe (87)
-ukgbdva (65)
-qmcphv (32)
-fmhfnhv (24)
-nhjtvk (47)
-sbmqxu (25)
-ewobo (25)
-hvgozl (17)
-ysxvzdu (65)
-sfazwz (68)
-hlwesdc (24)
-wgbvle (422)
-ugzmeb (77)
-hbptt (138) -> uezwz, gbckkh, gvdlvgg
-auezw (95)
-lkuwf (95)
-cneno (190) -> uwjobru, jeadxth
-wkrgvo (95)
-koxzeku (79)
-vehziv (67)
-codkti (71) -> tqbtvqc, oausk
-kjwfeoj (82)
-dcvfkk (111) -> uahcz, xsxnizc
-lcnsf (22)
-zzwmn (40)
-bywbrk (80) -> rnkbli, vlwvot
-jpmrs (94)
-lfgqgs (187) -> vbjpz, hlbotz, boalcdm
-xbnmg (48) -> aesiz, tqelui
-pcvfgti (29)
-ucpkpfb (181)
-blkewbk (64) -> jlsryou, idokb, avecfoq, ozyqew
-mbwaxn (240) -> nachvlp, prcxksh
-wgsgaj (17)
-fzwzr (12)
-mgcpbp (34)
-jxyakll (97)
-fdeowqq (77)
-zxmwy (35)
-yudzxoa (84)
-wwbebbr (95)
-wgtnepi (66)
-wkkdc (40)
-xlccnkv (13)
-yxrhis (8)
-uwjobru (22)
-csfzl (64)
-dspkk (66)
-xwknab (28)
-fmdsfus (98)
-vpirde (64)
-nulax (10)
-ymkgx (23)
-psetts (80)
-ucfipvi (67)
-hsdym (340) -> onjqcrh, eitdb, ycuuwxa, mxemqqb, pnqycz, wexncjl
-wqojj (22)
-xiiqh (98)
-cqjsqh (360) -> bzmqg, jpscxfh, ercxmph
-wnowypb (83)
-snqnh (95)
-mifwbmm (114) -> tfezflv, qxrspl
-fcgkmq (68) -> thftfut, svtqdbd
-gachtig (49)
-qxnvoh (214)
-ihtfo (87)
-qxrspl (95)
-nnciip (95)
-ercxmph (318) -> ixncawy, zhrdezs
-iqmpc (53)
-rnbvid (49)
-xukfcd (28)
-bjadb (49)
-niifkl (90)
-kxrbd (20)
-lrcstqr (25)
-gackyrq (22)
-cbavt (161) -> qvrvcu, uhuees, pggjo, jajdx
-mahlbe (6)
-llpbev (29)
-efqjc (15)
-efvqwzi (7)
-epqowm (45)
-fjdlcbh (139)
-csfjt (92)
-zrnlkl (63) -> dyfzj, xviqup, atrzkqf, ulbute
-xsygbj (130) -> vdlbwyo, ciquv, msdcz, kplvk
-cdfmatu (80)
-xeihyok (81) -> uunpyb, wfgzr
-ssnpxj (56)
-wclnx (91)
-nnncfl (335) -> sgytd, nreuwh
-cdjxwb (99) -> buznuv, hkltivy
-aditjen (7)
-auhnyn (25)
-nvigovl (98)
-yeyxf (16)
-uwxjkq (905) -> jblwph, cdjxwb, dydcy
-lkjhmiq (25)
-teygd (170) -> llpbev, nrxyk
-jaasf (95)
-dwrtbo (87)
-hwgwzv (57) -> qqqbf, fnslg
-alhghui (279) -> qbhhtw, ltytvpb
-mjqzvuu (195) -> hvwyae, tmzxl
-wzczb (61)
-ciquv (24)
-gozhrsf (762) -> ifxzdfy, uuxpvxf, zyqssjb
-khyca (84)
-atrzkqf (95)
-psjec (97)
-xyxidwf (24)
-esized (69)
-towuup (68)
-trszl (44)
-fkttd (141) -> hbhfdlh, hgwbg
-olvztw (21)
-tebkmhi (25)
-ltytvpb (90)
-msdcz (24)
-csdap (27)
-vqinar (2904) -> qhbrmur, nrgxdmx, angpy, gcswiam
-yxbaldn (122) -> vxiwms, syvza
-swgjx (6)
-mflijpx (75) -> oxypy, rtwlo, vwnvlh
-pygrhr (144) -> rdorrx, pjecv
-alneot (25)
-wdbmakv (42933) -> ktasnia, mxnaq, mcrhiy
-fjticim (35)
-rsfxf (123) -> yjnzgl, glrmew
-tyvjs (12)
-gbckkh (20)
-dgqfrv (35)
-oozbxqb (92)
-oypvhy (140) -> yvlajs, pjhpwh
-fnslg (52)
-vhzfut (96) -> obzrtar, qtzelhq
-iqjqlfq (59) -> gmzcjo, rrzyzq
-amklj (23)
-tvbgr (80)
-qsrxouy (96)
-rauho (72)
-tzrqwt (77)
-pdazlob (16)
-uhuees (19)
-qebqgxd (94)
-ffhsg (79)
-hzuyh (50)
-oiuztx (92)
-wjdeth (5)
-bjops (18)
-bwvlnlt (38)
-baedi (89)
-irokors (39) -> xiiqh, paoxff
-zvtfm (41)
-aizdt (54) -> zjpkoar, zzwmn
-ffzzzc (67)
-oxoul (12) -> fkzxb, chcjswk
-dcero (34) -> ssvfbfs, nxbec
-rloxobx (421) -> jiwfia, nxuer, xfcktep
-foznw (146) -> dpngy, wgsgaj, xboqv
-buznuv (26)
-tduxvx (326) -> iktget, vylzag, picnycy, lfdery
-hiuviy (59)
-dtazpb (85)
-oxlzlor (16)
-bvejguc (68)
-uwjkolt (52) -> tvxvtce, igdkn, rteyxil, qvxanzu, qllime
-rvqopbu (67)
-owukmji (195)
-pbzvjg (77)
-agztuz (53)
-zpaivc (19)
-nofpmh (290) -> efvqwzi, pmdcajx
-mhnnmp (8) -> qbaosu, pjndde, anamgt, bcesxba, blkewbk
-zfqmic (67) -> lkuwf, pkipy
-tespoy (5) -> bdlnohy, jppbvbo, fgsmzi, sjmhuxn
-qhbrmur (1450) -> kcfgbv, dyomhm, nofpmh
-lkdyq (57)
-fuaio (16)
-ccxff (53) -> cgveph, tzbmy
-fioegdo (140) -> opzxu, blyms
-bgnfpcr (75)
-bmukspb (106) -> jzoxv, gqvmeg
-sbmwazv (39) -> arrvxtj, hawhqex
-xqwfgy (1496) -> cywvxf, bjbndbg, mlvhqpe
-jfqddfd (64) -> ewgadin, fyxttac, gvtcy
-empixc (142) -> hlwesdc, xjcxk, fmhfnhv
-zmdkea (154) -> bgnfpcr, hgkmod
-jeadxth (22)
-ucilvib (40) -> ddgnyfo, koxzeku
-rteyxil (334)
-clqfbvi (66)
-lfdery (33)
-ijtis (85)
-rmshk (24)
-kptdem (97)
-ropdc (226) -> usevjww, agthzo
-talptwp (77)
-bzqjb (61)
-idokb (95)
-kynezb (79)
-tvxvtce (52) -> ujgeml, jpmrs, lpsaav
-athuly (98)
-vazoq (248)
-rxcgwd (38)
-tfezflv (95)
-cywvxf (279) -> greav, kybtla
-lfliwg (65)
-qjkfys (353) -> bjhxuqc, cvxqnh
-vvzmdr (18)
-gwuixj (31)
-svtqdbd (61)
-nqfqgj (22) -> niifkl, fosdh
-lxzvkpk (458)
-gewpohj (16410) -> cvqbwem, uzljl, zlhpt, vtcxw, iffluz
-bggovyb (144) -> supjxi, mieynp, wltax, pyhof
-pbdafpz (236) -> wjdeth, zacwh, mxpgmte, wjgjhc
-pqrpkmd (34)
-maftysp (53)
-qqqbf (52)
-fpeiss (76)
-qsstg (57)
-oqeam (128) -> qjzss, gwuixj
-brvxyyg (30)
-oqmxlu (39)
-tlpfhx (147) -> heisrl, hskhxx
-icush (877) -> rsfxf, zfqmic, axzszf, gzwrv, cujuai
-jagajrh (93)
-kejph (98) -> alneot, jjiikvt
-acvzsbe (37)
-gqvmeg (52)
-olebdv (65)
-tqtut (74) -> ykitsi, wxvjyn
-tzngdx (486) -> pvyrkg, hppxlu, eovobtl, diqdy
-vmsoc (61) -> euvrdg, dcriqom
-qiznqk (77)
-kspsz (112) -> tduix, aqacmr
-kybtla (20)
-ktjdpt (23) -> tdmirp, qhpvuzi
-jmvcgo (88)
-hjzkjuw (76)
-qinne (35)
-ypqkl (64) -> qjeuqe, wowxv
-epcjds (26)
-mrxdp (22)
-pznkdcr (67)
-kmvvxon (16)
-xlaqpg (81)
-nhtfal (23)
-bxqqvue (5668) -> zqbpucs, mhnnmp, ewqcktv
-ipnvjje (80)
-noibcw (95)
-pywtg (16)
-omslcm (34)
-sxdngcn (6)
-insleik (209)
-wxvjyn (63)
-ntezb (25)
-klkwsa (57)
-figvamv (32)
-phqpwkw (1192) -> egkiqcp, ecjxs, foznw, tokyi
-onjqcrh (67) -> lkdyq, tptqtpq, dmidur, klkwsa
-igytdcp (160) -> vtdbov, dporud
-vrtgae (66)
-bwgimi (242) -> eohjrft, ankrgg, kvvkbhi
-bzjxil (23)
-ankrgg (55)
-okurp (5)
-rndvcf (39)
-rkgoovn (104) -> qyfsc, lytrpo
-thftfut (61)
-jduij (65)
-invra (180) -> sxdngcn, mahlbe, swgjx
-wkkmvcn (7)
-igcmpn (55) -> bcadp, sxjlr
-pgaiut (90) -> vtccvv, mgcnohi
-iytvm (15) -> juoaena, qebqgxd, uwxge
-glrmew (67)
-uqmaluk (70)
-qstlv (75) -> qmcphv, bpguivk
-gtbgp (234) -> ilsgqdw, qakiz, zesfmu
-rziopi (57) -> flgpg, nqjydpi, xbnmg, xxdcgas, vhzfut, sfwzqk, kirnt
-rdorrx (56)
-oxypy (1992) -> sflonq, igytdcp, nzcqte, sjbfmfa
-pekohn (65)
-praagwp (30)
-qqooh (15)
-nzawh (22)
-ywwxi (49)
-phnuqn (44)
-ylnobx (5204) -> rziopi, mzutqi, lcitl
-gumncu (24)
-cjgtra (900) -> nfkfex, rhqfb, oyyctv
-gjgrhw (94)
-paeel (87)
-xiqthw (87)
-ogowst (176) -> pdzooh, xlccnkv
-mevujmj (83)
-tlqjsb (994) -> odxpup, znagag, obmcr
-ejoxsy (38) -> lxwkpqh, zdelqb, xyang, gtbgp, onzind, wabzx, kzjtb
-agthzo (15)
-xyvnk (32)
-crchwpb (36)
-pjoqde (76)
-fgcajp (50)
-tefdmi (44)
-xctuhbx (72)
-tokyi (79) -> yapfoe, yyecrv
-njxrb (60)
-qotyaq (7)
-dnbejx (70)
-uhrdeol (171) -> qinne, opskc, zxmwy, dgqfrv
-cwxspl (12) -> nnciip, hbbpp
-nggubzz (84)
-uuunqk (9)
-lxttas (133)
-xvdmeo (7)
-gkkit (84)
-wexncjl (295)
-jgsmitm (173)
-pxxabj (33) -> wgupfl, lpdhdvy, lfliwg, fklfgd
-ruedk (146) -> kgwftu, xlacmu
-ydpemw (3192) -> ymkgx, nhtfal
-ibqrz (96)
-oyyctv (34) -> ipnvjje, tvbgr
-xfcktep (13)
-jblwph (81) -> lxexhp, vbqpp
-steez (38)
-xnxudsh (78) -> pjlxc, nfywcyp
-rxjly (133) -> rftuf, hzehjo
-eteyvz (23)
-eohjrft (55)
-wqilo (32)
-tbmyue (54)
-nkwwia (1405) -> dsjcqpn, irokors, wzbewii
-oausk (31)
-rpjfkh (55)
-mxnaq (3937) -> glcsinj, icush, wjrhp
-kviiza (70)
-anggtqq (86)
-uuxpvxf (114) -> nhjtvk, vezhmd
-yrolq (64)
-tkjofj (60) -> mjqkaqs, lnfjj, nakli
-nasbs (70)
-usevjww (15)
-valby (106) -> vgfhpwb, xtnvc
-zxygmaq (10)
-tdmirp (75)
-zodwdpq (93)
-uyhrcfl (76)
-mqgbif (73)
-oqjqu (67) -> xbxxe, yjwvnhl, vmsoc, tlpfhx, rxjly, dyazidi
-euwab (49) -> cdfmatu, wawtrk
-admjq (40) -> qvaayfl, uqynzy
-petvm (24)
-zqpxn (196) -> himyt, zvtfm, xpotznx
-nxxlbnt (34)
-kpbawoe (26)
-zlhpt (74) -> zvbqni, iytvm, htitjjt, aqxaecv
-kkmax (37)
-recxxj (53)
-ejhojmh (56)
-dnovxt (44)
-crslvc (69)
-fnayjx (64)
-lytrpo (47)
-auvuxv (242) -> wqojj, ndikjqv
-zesfmu (37)
-cnffplo (166) -> fuaio, pywtg
-dfmjy (399) -> isxysg, dxlpr
-xcfxvd (92)
-xznhz (54)
-mclqrmw (15)
-cqvdpy (62) -> yzcez, nvrjzg, sebvkw, pgaiut, bggovyb, wfsaglg, teygd
-fewgct (90)
-xaden (108) -> jagajrh, fucxhz
-xvhgvw (36)
-ejekn (98) -> kemkz, souqntk
-hsvmept (30)
-zwopz (60) -> byedxex, yxbaldn, hnkvw, lvkeqm, kigyp, ruedk
-uqynzy (80)
-axzszf (167) -> iiuqtqw, vktjns
-gugxitg (553) -> trlcj, olawkuc, xeihyok
-wugia (2689) -> temju, xkymbld, ntlrkw
-lxexhp (35)
-scnhwcs (74)
-yhukqf (50)
-upozls (20)
-qladcl (44)
-wjgjhc (5)
-fucxhz (93)
-nayvvrh (25) -> ejtdhx, oyurlfq
-oonpy (15) -> wyryqvy, zkgdtp
-xowkw (41)
-zildb (116) -> umjcr, pinqp, piizso
-hrrld (1802) -> pqiuhyp, nkwwia, exsmez, rarkt, hsdym
-lzojty (214)
-uzljl (710) -> pmolg, benqzp, khfzis
-vyinb (154) -> fzyim, vrfme, hjbfr
-syogw (36) -> mevujmj, wpphwjv
-qyfsc (47)
-wvvivob (6)
-wksjlix (81)
-reomle (191) -> jacmj, amcixd
-fzyim (20)
-zfipnh (21)
-uopxjn (64)
-gaxdd (25)
-dzwfsix (87)
-nrxyk (29)
-vbjpz (13)
-kgxfc (30) -> kzjozhi, dtqgdc
-nfkfex (134) -> vsjjq, nduildw
-cpujsn (22)
-weipv (91)
-wjceo (184) -> resoi, gaxdd
-unkkoph (119) -> myhnuu, lcmlbj
-lnfjj (50)
-bmmzqxb (81)
-gzocw (110) -> qkjdjpe, yxxdal
-uxjaa (131) -> coapfqs, kxrbd, rkctaq, xfyqx
-jimltsw (16)
-nptqxtu (95)
-rpwdig (10)
-xflhoc (20092) -> bqyqwn, hycgb, nrgzcge
-jfofam (6042) -> gewpohj, ndticx, xflhoc
-syvza (99)
-whrinsh (34)
-coapfqs (20)
-souqntk (98)
-rpgzp (44)
-wgupfl (65)
-jxawk (34)
-zeolg (214)
-qzvobt (53)
-nmazby (120) -> yijwaf, idmqvse, dsmjo, wqilo
-yuiyjpc (862) -> eavas, lxttas, codkti
-rkuzg (83)
-gdvuw (179) -> vrtgae, teqej
-pinqp (59)
-xtnvc (99)
-gppwsbp (35)
-exsmez (1357) -> pralyx, tkmfbk, unkkoph
-ewvvb (83)
-nlfdps (87)
-jmuqp (44)
-mieuhe (97)
-donzb (407)
-igbzlxl (27)
-invqsb (5)
-xxdcgas (30) -> auezw, wwbebbr
-qhkhuow (44)
-sgytd (62)
-ikzap (5388) -> mjrktxe, tlqjsb, yuiyjpc
-kvvkbhi (55)
-xahvbm (222) -> udgssh, bbbhx
-iiuqtqw (45)
-isrgei (173)
-ntlrkw (36) -> gkwyfz, acjedny, mcucysr
-qxugs (31) -> iqmpc, lrtzi, krgtrdn
-sebvkw (214) -> qotyaq, dhvsrt
-gcswiam (1183) -> vahmn, cwfydbh, cjjytkr
-ncuzpin (39)
-sybvdj (83)
-obzrtar (62)
-thhakxn (103) -> pplis, tykcvi, mklqpn, jzgvab
-vtjtyp (152) -> dhisacj, zpxgfq, oqeam, fcgkmq, nnyws, qxugs, oxoul
-icxzod (15)
-nakli (50)
-bzmqg (374)
-dhisacj (73) -> rndvcf, oqmxlu, ncuzpin
-pdzooh (13)
-pvyrkg (51) -> yytmc, clqfbvi, tmkli
-scvhl (28)
-qwotm (169) -> pqrpkmd, whrinsh
-dcpzwz (87) -> wxgoew, xqwfgy, hrjlzxr, wapknj, ejoxsy
-qsdyww (55)
-puvmdie (41)
-umjcr (59)
-himyt (41)
-tptqtpq (57)
-zkwajbd (61)
-vutdji (31) -> bsvgagj, puvmdie, liujmc, xowkw
-lpsaav (94)
-bmcwbsi (96)
-rtbcch (64)
-nadbegy (66)
-jyazs (74)
-xcmzg (30)
-abxglwt (191) -> pmopji, jtxjj, asevk, yznmd, jfsgqq
-tzimies (65)
-jfhzgp (67)
-wyryqvy (90)
-kirnt (134) -> bmlfd, fykgs
-xhgza (16)
-xajzwdh (65)
-tpcbt (81)
-zmoxc (99)
-bcbftl (38)
-arrvxtj (71)
-imiimt (22)
-tqelui (86)
-sibvtz (79)
-pchfpqp (86)
-faopk (147) -> figvamv, jlsmm
-wscqe (14) -> ezzpr, chyun
-emkgc (142) -> lcrbt, pcvfgti
-nreuwh (62)
-vahmn (49) -> twyhx, rztur, pchfpqp, anggtqq
-eourjv (204) -> kpbawoe, zjwqc
-ssvfbfs (96)
-dxlpr (8)
-sgovqnf (69) -> kzsoasg, dnbejx
-eoxwp (133) -> zxygmaq, xadjes, nulax, rpwdig
-ydffzgu (380) -> olvztw, zfipnh
-byojhfr (97)
-nlwakg (161)
-ztxcc (68)
-zisdcf (18)
-itutdol (55)
-cseckdt (11)
-zqwqcnq (37)
-fhqhu (188) -> igbzlxl, llalaql, ppjapn, csdap
-kzsoasg (70)
-cvqbwem (92) -> wjceo, gqqsfsr, vukpdsr, cneno, bvaoy
-pjujovx (96) -> ayuma, bmmzqxb
-vjobpzv (24)
-kerjk (84)
-qvaayfl (80)
-bcesxba (444)
-hnyjyga (95)
-gjjfx (131) -> btwmd, xznhz, dsezlbe
-idmqvse (32)
-ygqxl (16) -> nhvyso, talptwp, qiznqk, ugzmeb
-ozyqew (95)
-itxgz (370) -> epqowm, jrhzmbj
-afntec (96)
-cgveph (71)
-isxysg (8)
-cqlvkj (65)
-ykitsi (63)
-bjhxuqc (53)
-uahcz (50)
-vbejzc (38)
-cujuai (157) -> ldqyt, fgcajp
-kgphv (246) -> wvvivob, sjoov
-gqqsfsr (78) -> ckudisa, kwhgtnk
-dofou (44)
-uijffti (65)
-nkzgse (7)
-xrtzs (96) -> ictsk, invra, rkgoovn, gzocw, hbptt, ucilvib, cnffplo
-zvbqni (105) -> qkzpcyy, qsrxouy
-zqbpucs (568) -> dfmjy, fnnykbh, gqeiy, fifams
-lnndami (68)
-rcluk (156) -> fjticim, mbbuqoi
-zylotoh (7)
-phcqntb (76)
-amcixd (29)
-jlsryou (95)
-rceksnv (57)
-vwnvlh (1534) -> krnbkr, egizyey, empixc, lzojty, vyinb, zeolg, qxnvoh
-chyun (94)
-hrjlzxr (1124) -> ybixf, qmshniw, zrnlkl
-bwlit (20)
-grxdbx (34)
-eqgvf (9) -> wdbmakv, zqamk, hvecp, rbzmniw, jfofam, tigvdj
-uqals (78) -> ropdc, pbdafpz, mgqil, pygrhr, eourjv
-veuzidj (49) -> kmhug, yrolq, csfzl
-eovobtl (149) -> hzuyh, iftcnc
-udgssh (5)
-nxbec (96)
-dyomhm (40) -> npxexv, xbccghy, jncjxue, nadbegy
-fsdoohr (64)
-lcrbt (29)
-rarkt (1387) -> mjqzvuu, nzhbfc, veuzidj
-temju (53) -> qpzszp, cqlvkj
-nrgxdmx (1352) -> mlalrpt, nqfqgj, cuscn, ogowst, vfrylx
-tlpfggk (25)
-wzimze (4005) -> uwjkolt, jynmg, ibqmynm
-ddgnyfo (79)
-fyaxzl (18)
-qpzszp (65)
-eitdb (197) -> trvtkqj, kwnqw
-fgsmzi (525) -> dzuqljn, ihvefep, uhrdeol, gdvuw
-nevrtrs (83)
-jyftx (76)
-lcitl (1114) -> nlwakg, hwgwzv, girxc
-kzjtb (78) -> gacseeh, lycfbo, aifpxqv
-zacwh (5)
-glcsinj (90) -> aemkbp, yxxgd, fhqhu, xquhgig, nxmhned, lqbmor, qmyfg
-rswnjx (57)
-cokvree (96)
-ewgadin (39)
-oqsdzpe (50)
-yznmd (62) -> uvkwg, mncivb
-lpdhdvy (65)
-kmhug (64)
-bvtgvu (94)
-hycgb (237) -> zmciyk, ysbhsn, vxslvq
-ycuuwxa (161) -> vehziv, rvqopbu
-mieqogh (19)
-xadcuw (1626) -> chgfb, stofi
-supjxi (21)
-rfqddq (53)
-qbaosu (314) -> hshafy, ukgbdva
-ptxfk (73)
-lofybs (89)
-agjpn (8265) -> ocgbpez, ejdxula, kgbzu
-mgbgb (334) -> kksizqf, dofou
-izxpf (39) -> ewobo, ntezb, sbmqxu, tlpfggk
-znagag (89)
-zmciyk (19) -> mieuhe, psjec
-dhobx (95)
-hvecp (90) -> hrrld, jazqb, fonrb, dcpzwz, vqinar, bxqqvue
-sjbfmfa (80) -> fewgct, jupzgjm
-fmpvv (74)
-bcadp (91)
-tmzxl (23)");
+            Day8.Solve(@"hwv inc 149 if clj >= -5
+or inc 530 if hwv > 144
+d inc 131 if f < 1
+gnz dec -236 if jp != 0
+mu dec 266 if sp >= -6
+t inc -146 if w >= 8
+w dec 825 if jp != 3
+cto dec 403 if ino != 0
+ino inc 17 if sp != 0
+bt inc -341 if sp != 6
+vv dec 824 if clj >= -9
+mu inc -371 if gnz < -7
+f dec 865 if w > -828
+cto inc 588 if noj == 0
+mvh inc 484 if noj == 0
+ino inc -728 if gnz > -6
+or inc -795 if nm >= -9
+q dec -87 if or != -274
+q dec -889 if q > 80
+f dec 155 if t <= -3
+or dec 185 if nm < 9
+w inc -243 if mu > -276
+mu inc 798 if clj == 0
+uc dec -499 if mu > 527
+ino dec -487 if ly <= 2
+w dec 562 if nm > -9
+q dec 607 if or == -454
+jp inc 995 if ooh != -10
+w inc 122 if gnz >= -5
+sp dec -321 if l <= 2
+l dec 319 if mu < 542
+bt inc -389 if hwv == 146
+bt inc -799 if noj == 0
+q dec 231 if gnz >= -9
+w inc -451 if clj == 8
+nm dec -986 if l == -319
+gnz inc 395 if cto < 593
+nm inc 790 if uix <= 4
+mvh dec 568 if ino == -241
+bt dec -583 if l != -315
+l dec 779 if jp > 998
+uix inc 28 if vv < -816
+uix dec 524 if uix == 28
+or inc -125 if bt > -558
+clj dec -368 if uc >= 500
+noj inc 744 if uc > 489
+liq dec -931 if f > -862
+bt dec -785 if cto < 593
+nm inc 557 if ooh >= 3
+clj dec -238 if bt <= 222
+ooh inc 76 if f <= -870
+q dec 535 if vv > -832
+vv dec 572 if liq < 6
+nm dec -877 if hwv <= 158
+ly dec -61 if ooh != 0
+mu dec 122 if hwv >= 145
+t dec -73 if nm < 2656
+q dec -986 if ino >= -247
+sp dec 847 if ooh >= 2
+t inc -644 if mu >= 405
+w dec 682 if or == -575
+cto dec 355 if clj <= 9
+mu dec -258 if sp < 328
+noj inc 418 if cto <= 242
+jp dec 94 if ly != -10
+liq dec 286 if liq == 0
+mvh inc -286 if q == 1196
+ly inc -429 if l >= -311
+vv dec -122 if cto >= 224
+noj inc -11 if liq == -286
+nm inc 306 if uix >= -487
+t dec 348 if nm > 2653
+w dec -100 if bt != 238
+d inc 614 if vv >= -1282
+nm inc -488 if bt != 222
+l dec 410 if l != -319
+mu dec -416 if ly >= -2
+l inc -435 if vv < -1270
+bt dec -83 if cto <= 232
+jp inc -208 if ly <= 6
+mu inc -761 if sp <= 327
+hwv dec -501 if nm != 2164
+mu inc -851 if vv >= -1280
+q inc -270 if ooh != 1
+or dec -260 if or <= -578
+ooh dec 859 if d <= 750
+d inc -343 if vv > -1279
+w dec -817 if cto != 228
+noj inc 437 if nm <= 2158
+jp dec -205 if nm != 2157
+uc inc 823 if bt != 231
+hwv inc 363 if uc != 1315
+ly inc 899 if ly == 0
+uix dec 912 if ooh < -852
+q dec 52 if clj == 0
+bt dec -242 if ooh > -868
+noj inc 798 if ino != -232
+uc dec -926 if uix == -1408
+sp dec -918 if hwv > 1004
+ly dec 855 if or == -575
+clj inc 575 if bt == 466
+t inc -894 if hwv > 1003
+q inc -377 if q == 874
+or dec 541 if gnz != 398
+uix dec -152 if vv != -1276
+w dec -673 if uc <= 2255
+mvh inc -870 if bt > 469
+or inc -458 if gnz > 387
+l dec 99 if gnz <= 404
+mu dec 727 if bt < 477
+bt dec 231 if l >= -844
+mu inc -239 if ooh > -861
+w inc -333 if t != -1456
+liq dec 534 if w < -927
+q inc -688 if w == -933
+l inc -533 if f < -860
+t dec 781 if liq == -825
+ly dec 319 if hwv < 1014
+ly dec -333 if cto < 237
+mvh inc 606 if hwv >= 1011
+uc dec 331 if ly == 54
+hwv inc -802 if hwv < 1018
+d inc -457 if nm != 2162
+q inc -159 if uix >= -1265
+jp inc -305 if uc < 2250
+jp dec 285 if mu == -1494
+nm dec -244 if f < -855
+cto inc -431 if cto < 236
+f dec -343 if gnz >= 393
+t inc 311 if noj >= 1948
+uix inc -41 if l < -1385
+noj inc 3 if w < -932
+ino inc 785 if bt > 466
+l dec -868 if vv > -1281
+l dec -704 if t == -1154
+noj inc 485 if ooh > -868
+or inc -724 if w < -936
+ooh dec 913 if nm == 2409
+hwv inc -201 if nm < 2418
+ly dec 296 if ly != 48
+clj dec -800 if or < -1578
+bt inc -465 if cto > -198
+bt inc -811 if clj > -5
+l dec -118 if d >= -62
+cto dec -748 if hwv < 17
+clj dec -781 if uix >= -1302
+jp dec -917 if or >= -1575
+bt inc 787 if l <= 308
+q dec 270 if jp != 1224
+uc inc 552 if ly >= -244
+f dec -728 if noj <= 2434
+w inc 819 if ly < -229
+t inc -891 if nm >= 2409
+ly dec -52 if q == -620
+ino dec 440 if gnz > 388
+t inc -580 if or != -1581
+bt inc -204 if jp == 1225
+l dec -478 if w < -110
+noj dec -992 if gnz <= 388
+q inc -370 if ino <= 98
+noj inc -15 if cto == 550
+w inc 327 if d > -63
+or dec -742 if hwv != 7
+w inc 13 if vv < -1282
+or inc 748 if q != -610
+bt inc 272 if cto == 550
+ly inc -32 if cto < 558
+mu inc -524 if bt > 510
+or inc -155 if ooh > -1766
+w inc -473 if w > 209
+noj inc -651 if bt <= 514
+uc inc -665 if or == -84
+liq dec 988 if bt > 508
+vv dec 37 if ly >= -227
+f dec 498 if mu <= -2018
+q dec -765 if jp <= 1223
+nm inc 838 if bt < 522
+noj inc 614 if nm == 3247
+l dec 887 if or > -90
+gnz dec -842 if or != -87
+vv dec 558 if nm < 3250
+ly inc -132 if t > -2633
+ooh inc -381 if t >= -2634
+bt inc 586 if gnz >= 1237
+clj dec 627 if ooh == -2143
+noj dec 631 if clj < 789
+d dec 137 if or > -94
+jp inc 568 if jp >= 1223
+l inc -125 if w <= -255
+gnz dec -108 if q > -621
+clj inc 533 if or > -85
+mvh dec 643 if clj == 1314
+ooh dec -549 if clj != 1307
+f inc 573 if ooh < -1594
+d inc -369 if noj != 1763
+or inc -962 if ino == 104
+uc dec -667 if bt != 1092
+mvh dec 816 if ly < -349
+cto inc -804 if bt == 1100
+uc inc 78 if sp <= 1245
+hwv dec 62 if jp < 1801
+gnz inc 238 if ino != 103
+q dec 488 if liq <= -1800
+vv dec -969 if liq > -1814
+w dec 554 if f >= -449
+sp dec 137 if mu == -2018
+uc dec 880 if q >= -1117
+q inc 221 if mu >= -2019
+d dec -691 if mvh != -2102
+or dec -786 if cto <= -255
+ooh inc -738 if q == -896
+nm inc -458 if liq == -1808
+t dec -719 if ooh != -1604
+l dec -164 if sp != 1096
+ly inc -857 if l > -74
+liq dec -30 if w != -805
+jp inc -410 if w > -821
+nm dec -882 if q >= -890
+w inc 818 if nm <= 3661
+liq dec -502 if w == -814
+sp inc -58 if sp < 1107
+q dec -405 if w > -820
+noj inc -57 if t != -2625
+cto dec -14 if ly < -1204
+mu inc 525 if mu <= -2010
+w dec -452 if mvh != -2090
+ly dec 276 if mu <= -1488
+uc inc -919 if f <= -446
+ooh inc 608 if hwv < -51
+sp inc -549 if ooh > -1000
+d dec -441 if mu >= -1501
+uc inc -809 if q < -481
+d dec 740 if uix == -1288
+uix dec 951 if ooh > -1000
+vv dec -902 if gnz > 1579
+clj inc 359 if sp >= 490
+mu dec 479 if q < -487
+noj dec -882 if ly <= -1480
+t dec -161 if l <= -66
+clj inc 381 if f >= -455
+bt dec -593 if hwv <= -49
+noj dec 386 if or == -1046
+uc dec -220 if noj < 2258
+noj inc 463 if nm == 3671
+mvh inc 607 if ooh > -998
+liq dec -641 if noj <= 2714
+mvh inc -711 if sp == 495
+sp inc -417 if t > -2471
+nm dec -863 if liq > -640
+noj dec -115 if gnz < 1591
+uc inc 645 if uix > -2243
+mvh inc 809 if gnz > 1582
+or inc 43 if clj > 2047
+liq inc -367 if cto != -242
+noj dec -544 if jp >= 1378
+l inc 670 if uix > -2253
+w dec 966 if nm != 4541
+noj dec 567 if q != -476
+vv inc 400 if nm >= 4532
+sp dec -298 if vv < 405
+mvh dec 439 if l == 604
+or inc 872 if uix < -2242
+vv dec 916 if uc == 492
+vv inc 391 if mvh < -1836
+liq inc -750 if f < -444
+mu dec -887 if ly >= -1483
+vv dec 850 if or >= -132
+gnz dec -394 if jp == 1383
+gnz inc 792 if nm >= 4531
+t dec 624 if hwv != -60
+liq dec -823 if nm >= 4525
+ino inc 63 if nm != 4544
+sp dec -48 if t == -3088
+vv inc 909 if mvh < -1830
+t dec 334 if w <= -1327
+q inc -458 if d <= 572
+or inc 461 if f < -445
+or inc -180 if l == 604
+jp dec 550 if uix <= -2242
+clj dec -574 if cto < -231
+ino dec 78 if or == 150
+t inc -717 if l > 600
+sp dec 985 if liq <= -921
+hwv inc 268 if uix != -2241
+uix dec -318 if liq > -936
+cto inc -771 if or != 153
+clj dec 333 if vv <= -1357
+uc dec 686 if bt <= 1700
+ly dec 999 if noj <= 2808
+liq inc 395 if hwv >= 213
+uc dec -762 if uix <= -1936
+l inc -434 if mvh < -1826
+q inc 238 if nm < 4540
+q dec -103 if ooh != -997
+bt dec 847 if hwv <= 213
+ooh inc 720 if or < 155
+mu inc 744 if noj < 2811
+or inc -118 if d >= 570
+sp dec 329 if d <= 575
+ino dec -479 if hwv >= 209
+uix dec 327 if vv != -1368
+noj dec 53 if cto > -1015
+hwv inc 26 if liq < -524
+or inc -293 if w != -1326
+or inc -476 if clj == 2295
+uix dec -135 if hwv < 252
+nm inc -874 if noj > 2757
+bt inc -153 if l == 170
+q inc 639 if bt <= 1547
+l dec -919 if l <= 177
+nm inc -432 if w < -1327
+ly inc -691 if vv <= -1360
+gnz inc 193 if t != -4135
+w dec -925 if uix == -2122
+l inc -576 if bt == 1540
+uc inc 978 if q > 35
+mu dec 3 if mu <= 141
+gnz inc -759 if q < 41
+hwv inc 344 if uix == -2126
+t inc -771 if nm != 4110
+t dec -95 if nm > 4092
+nm dec -600 if jp > 825
+ly dec -38 if noj > 2751
+jp inc 545 if uix > -2126
+f dec 40 if mvh <= -1820
+mvh dec -694 if or != -738
+noj dec -182 if ooh >= -279
+w inc 621 if l >= 510
+q inc 568 if f < -493
+mvh dec -35 if liq <= -541
+mvh dec 951 if bt <= 1546
+liq inc 308 if cto < -1002
+sp inc 617 if ooh > -268
+ino dec 155 if d == 571
+sp dec -135 if liq <= -234
+w dec 984 if ly <= -3129
+d inc 821 if mvh <= -2077
+w inc 99 if vv == -1364
+liq inc -266 if d <= 1393
+w inc -180 if ooh == -276
+gnz dec -539 if vv == -1364
+liq inc 337 if nm <= 4711
+l dec 640 if noj > 2927
+vv dec 511 if ly == -3135
+clj inc 315 if uix >= -2125
+l dec -581 if uix == -2119
+l inc 698 if ly >= -3135
+hwv inc -94 if jp >= 1376
+t dec -832 if or <= -729
+cto dec 584 if gnz > 2737
+t dec -676 if bt >= 1531
+or dec 946 if sp > -893
+t inc -814 if vv == -1875
+w dec 902 if mvh != -2079
+d dec -415 if w <= -1742
+noj inc -336 if vv <= -1867
+w dec 693 if uc == 784
+uix inc -1 if ooh != -271
+sp dec -578 if jp == 1378
+vv inc -423 if or >= -1687
+cto dec -615 if cto > -1603
+liq inc 262 if vv < -2297
+vv inc -951 if noj <= 2598
+bt inc -435 if mu > 132
+gnz inc 956 if gnz > 2734
+hwv dec 607 if ino <= 407
+mu inc 934 if vv == -3249
+sp inc -972 if nm >= 4693
+sp dec -760 if l != 563
+l dec -197 if l > 569
+clj dec -187 if liq <= 103
+bt dec -725 if ino >= 411
+d inc 450 if clj != 2609
+bt inc 772 if jp == 1378
+gnz dec -959 if uix > -2132
+gnz dec 162 if mu != 1061
+d inc 701 if mvh != -2084
+t inc 335 if ly <= -3131
+w dec -491 if vv >= -3250
+or dec 808 if d < 2260
+mvh inc -824 if vv != -3240
+hwv dec 79 if liq >= 115
+cto inc 284 if f > -492
+uix dec 675 if gnz != 4494
+ly inc 560 if clj == 2610
+ly dec 507 if clj >= 2605
+mvh dec -354 if ino != 415
+sp inc 267 if mvh == -2554
+ino dec 247 if uc > 780
+ooh inc -566 if jp >= 1372
+liq dec -634 if mvh > -2557
+clj dec 230 if q < 42
+uix dec -502 if ino < 167
+uc inc -69 if q <= 47
+mvh inc -38 if ino > 158
+d dec -36 if clj >= 2378
+or inc 803 if uc != 725
+ly inc 121 if uix < -2297
+jp inc -349 if uix >= -2289
+mu dec -104 if or < -1682
+jp dec -120 if hwv > 147
+mvh inc 376 if nm > 4694
+cto inc 286 if or >= -1696
+cto inc -586 if or < -1688
+gnz inc -39 if liq != 745
+q dec 422 if mu == 1173
+cto inc -984 if ino == 166
+f dec 208 if l < 776
+q inc 514 if l == 768
+l dec 458 if mu == 1173
+jp dec 583 if w <= -1958
+ly dec -932 if d < 2297
+or inc 449 if mvh > -2212
+liq dec 626 if t < -3779
+uc inc -933 if ino > 172
+hwv inc 760 if or == -1688
+hwv inc -911 if or < -1683
+clj dec 302 if q > 123
+vv inc 19 if ino > 169
+ly inc 520 if w > -1953
+clj dec -54 if or <= -1680
+vv inc 22 if l > 310
+mu dec -341 if liq >= 109
+w inc 186 if gnz == 4456
+bt dec 418 if jp >= 1494
+gnz dec 514 if ly <= -1629
+mvh inc 284 if d > 2290
+sp dec 351 if q <= 139
+uc dec 135 if jp != 1498
+mvh dec 822 if cto != -1394
+f inc -934 if w == -1765
+d inc -699 if l == 301
+liq inc -768 if mvh != -1927
+t dec -882 if ooh != -835
+mu dec -469 if vv != -3242
+bt dec -612 if t > -2909
+mvh dec -417 if mvh <= -1941
+ly inc -816 if or < -1683
+ly inc -708 if uix <= -2289
+or inc -60 if jp > 1493
+bt inc 985 if ino >= 175
+vv dec -587 if clj > 2139
+noj inc -806 if sp >= -617
+t dec -621 if l > 302
+t inc 396 if uc == 715
+sp inc -217 if w > -1767
+q inc -965 if ooh != -842
+q dec 892 if gnz <= 3943
+hwv inc -482 if nm == 4702
+f inc 213 if ooh < -837
+ino dec -433 if q > -770
+ino inc -791 if ly != -3151
+vv dec -467 if uc < 721
+sp dec -501 if ino != -184
+uc inc 382 if clj < 2127
+bt dec -983 if sp <= -319
+t dec -127 if ooh >= -850
+mvh dec 41 if d == 2293
+d dec -786 if cto > -1395
+gnz dec -444 if mvh <= -1970
+hwv dec -802 if clj < 2140
+clj inc 775 if clj >= 2132
+uc dec 986 if mu != 1981
+noj inc 917 if bt != 3779
+uix inc -376 if nm >= 4702
+hwv inc 339 if cto != -1390
+uix dec -300 if vv < -2791
+uc inc -777 if ooh != -852
+t inc -141 if uc >= -1055
+w inc 491 if ooh < -833
+d dec 8 if w <= -1265
+jp dec 789 if cto > -1400
+liq dec -255 if mvh == -1973
+nm dec 452 if d < 3067
+noj inc 570 if jp <= 717
+q inc 591 if t == -1901
+d dec -594 if ly <= -3151
+gnz inc -267 if nm < 4703
+ly dec -99 if uc > -1039
+l dec -849 if cto > -1392
+bt inc -389 if hwv > 664
+ly inc 575 if bt != 3779
+clj dec 93 if l < 314
+gnz dec 60 if or > -1754
+q inc 396 if ino < -182
+noj dec 634 if nm > 4695
+t dec -44 if vv <= -2781
+f inc 58 if d >= 3663
+mvh inc -575 if w >= -1283
+clj dec -526 if ooh == -840
+gnz dec 37 if uix <= -2675
+ooh dec 39 if w > -1275
+hwv dec 902 if mvh == -2548
+ino dec 390 if liq >= -401
+vv dec 942 if d < 3666
+ly dec 482 if or >= -1752
+clj inc -667 if d >= 3659
+gnz inc 797 if noj < 1733
+l inc -379 if hwv > -251
+clj dec 328 if vv < -3718
+mu dec -629 if mvh > -2545
+uc dec -539 if sp == -324
+hwv dec -728 if ly <= -3629
+liq inc 191 if hwv <= 478
+l inc -153 if t == -1857
+vv inc 146 if clj != 1813
+jp inc 334 if cto < -1384
+d dec 740 if sp >= -326
+f inc 907 if w >= -1282
+vv inc -448 if t == -1857
+clj dec 751 if or >= -1748
+uc inc 716 if gnz >= 4847
+l dec 417 if hwv <= 476
+uc dec 780 if f == -451
+q dec 310 if hwv == 482
+uix dec -254 if gnz > 4855
+ooh inc -998 if uc <= -569
+f dec 645 if t == -1857
+w dec -513 if liq <= -392
+mu dec -489 if cto <= -1388
+f dec -40 if uix > -2423
+f inc 908 if mvh > -2554
+noj inc 353 if l > -225
+mvh dec 31 if ooh <= -1871
+liq dec -20 if or < -1755
+clj dec 113 if d < 2931
+mvh dec -29 if gnz == 4856
+jp dec 548 if liq < -394
+uc inc 534 if jp < 500
+clj dec 251 if uix >= -2419
+ooh dec -154 if sp < -316
+l dec -512 if t == -1857
+l dec 113 if ly <= -3632
+l dec 920 if sp <= -323
+mvh dec 946 if hwv > 480
+uix inc -425 if uix >= -2425
+sp dec -209 if f == -148
+clj dec -760 if w <= -753
+noj dec 65 if cto < -1392
+f inc 157 if mu != 2479
+cto inc 481 if bt != 3782
+cto dec 783 if liq <= -394
+ooh dec -854 if uix > -2852
+l dec 533 if noj <= 2013
+uc dec 907 if f > 6
+q inc -741 if clj >= 1455
+q dec -603 if w > -763
+vv inc -546 if ino != -579
+nm inc 464 if mvh >= -3494
+nm dec -690 if ooh <= -868
+clj dec 569 if q != -213
+clj inc -642 if noj >= 2012
+ino dec 374 if sp > -119
+gnz inc 988 if l < -733
+w dec -281 if ooh < -865
+t inc 795 if liq >= -405
+uc inc 245 if w <= -487
+cto dec -573 if mu != 2470
+liq dec -609 if hwv <= 488
+jp dec 539 if sp >= -108
+q inc -366 if d > 2916
+mu inc -764 if sp <= -112
+uc inc 459 if d < 2932
+mvh dec 613 if ooh > -880
+ooh dec 496 if sp != -113
+bt dec -461 if sp > -117
+mvh inc -359 if cto < -1122
+ooh inc 942 if hwv >= 480
+ooh inc -751 if mvh <= -4464
+nm inc -792 if mu <= 1702
+f dec 239 if mvh == -4468
+mvh inc 307 if noj != 2007
+cto dec -677 if nm > 5386
+d dec -22 if gnz <= 5852
+t dec 198 if gnz > 5850
+sp dec -431 if hwv < 483
+cto inc 421 if or < -1740
+l inc 768 if q >= -593
+liq dec -696 if sp >= 314
+sp dec 229 if cto < -24
+sp dec 207 if sp >= 81
+mu inc -753 if ooh >= -1178
+l inc -815 if cto > -33
+vv inc 236 if cto >= -26
+ooh dec -899 if q != -588
+nm inc -62 if cto >= -32
+mu inc -717 if nm >= 5337
+liq dec 166 if ooh < -267
+or dec -343 if d == 2940
+ly inc 367 if vv >= -4338
+ino inc -783 if f < -232
+f dec 564 if noj > 2009
+liq inc 833 if clj >= 246
+sp inc 912 if l >= -797
+cto dec -353 if t < -1053
+mvh dec -8 if nm == 5330
+f inc 389 if sp > 783
+or inc 402 if clj >= 251
+cto dec -909 if mu != 947
+ly inc -6 if w == -480
+jp inc 895 if nm > 5324
+ino inc -494 if nm <= 5337
+bt dec -29 if noj < 2008
+q inc 709 if mvh != -4153
+w dec 817 if vv > -4336
+nm inc 135 if sp >= 785
+uc dec -226 if ooh > -279
+l dec 785 if mu <= 956
+q dec -539 if f >= -407
+sp inc 397 if gnz == 5844
+vv inc -155 if bt == 4240
+clj inc -947 if sp >= 1184
+gnz dec -172 if liq < 1581
+clj inc -303 if mvh > -4160
+nm inc 928 if noj != 2016
+bt dec 112 if ino == -1450
+t inc -294 if cto == 1237
+hwv inc -683 if l != -1575
+uc dec -280 if hwv == 481
+bt inc 287 if or == -1346
+q dec 449 if f > -398
+gnz inc -362 if uix != -2838
+clj inc -711 if l == -1575
+clj dec 152 if liq != 1580
+clj inc 331 if mu > 960
+uc dec 752 if cto > 1234
+hwv inc -145 if gnz < 5662
+liq inc 291 if f >= -407
+ooh inc 967 if q >= -56
+t inc -719 if ooh < 693
+ooh inc 81 if jp > 1396
+w dec -927 if cto >= 1229
+w inc -706 if uix >= -2837
+or inc -973 if or < -1353
+jp inc -185 if jp <= 1390
+uc dec 730 if q > -51
+mu dec -128 if bt != 4417
+liq inc -79 if bt != 4415
+bt inc -692 if liq < 1874
+w dec -959 if cto <= 1242
+t dec -403 if q == -48
+ooh dec -113 if hwv != 347
+bt inc 671 if or > -1353
+hwv dec -751 if noj <= 2011
+d dec -958 if sp != 1198
+jp dec 583 if bt != 4393
+l inc -923 if mvh < -4145
+ly inc -23 if q == -48
+gnz dec -190 if gnz != 5649
+nm inc 391 if liq < 1867
+bt inc -848 if ly != -3294
+noj dec 153 if jp != 622
+bt inc 424 if jp <= 627
+f inc -314 if clj >= -1861
+cto inc -229 if mvh <= -4151
+mvh inc 565 if vv <= -4490
+uc dec -221 if sp <= 1180
+vv dec -850 if gnz != 5848
+liq dec 938 if bt != 3971
+or inc -692 if ooh <= 812
+jp inc 86 if mu > 1081
+liq inc 436 if l == -2498
+ly dec -477 if w != 1406
+clj dec -730 if mvh <= -3582
+ooh inc 442 if clj == -1130
+noj inc -274 if nm >= 5851
+t dec -698 if uix < -2838
+ly inc -306 if jp >= 708
+vv inc -616 if d <= 3909
+d dec -78 if l > -2499
+liq inc -324 if w == 1406
+or inc -341 if nm <= 5858
+or inc -360 if ly != -3613
+vv inc 712 if bt != 3976
+ly dec 587 if l != -2501
+d dec -98 if l > -2494
+t dec 872 if bt >= 3980
+nm inc 111 if vv < -3538
+ooh inc 806 if uix <= -2843
+or dec -123 if gnz > 5844
+clj dec 152 if clj > -1135
+sp dec 708 if bt >= 3964
+w inc 706 if t >= -976
+ooh dec 827 if cto > 998
+w inc -347 if ino < -1443
+or inc -129 if noj < 1749
+or dec -801 if uix <= -2837
+ooh inc 365 if nm != 5966
+nm dec 836 if vv < -3537
+sp dec -146 if mvh <= -3579
+uc dec 623 if gnz >= 5837
+q inc 419 if f == -719
+cto dec 668 if l >= -2507
+uix inc -645 if sp > 623
+uc inc -276 if bt <= 3970
+gnz dec -13 if w == 1765
+gnz inc 494 if d >= 3974
+clj dec 930 if ly > -4200
+jp dec -755 if uc > -2648
+ino inc 512 if sp == 627
+mvh inc 946 if hwv != 341
+gnz dec -351 if hwv < 339
+uix dec 72 if w > 1762
+clj dec -75 if f >= -723
+q inc -775 if mu != 1078
+or dec 462 if nm > 5135
+t dec -518 if hwv != 337
+liq dec 200 if noj >= 1745
+ino inc -911 if d >= 3987
+nm dec -123 if mu == 1083
+nm dec 915 if ino == -942
+gnz inc -978 if mu < 1083
+clj inc -907 if ooh >= 1595
+nm inc -916 if bt >= 3969
+ooh dec 526 if mu > 1076
+uc dec 332 if uix > -3566
+cto dec 994 if cto != 343
+w inc -438 if q > -411
+f dec 851 if mvh <= -2643
+q dec 221 if l < -2504
+clj dec -608 if f <= -714
+f dec -475 if jp > 1456
+q inc -668 if vv > -3540
+ly inc 944 if cto >= -660
+liq dec -5 if jp >= 1459
+q dec 628 if uc < -2973
+uix inc 311 if l == -2498
+ooh inc 956 if w < 1327
+clj inc -848 if bt != 3979
+uix dec -772 if gnz > 6698
+clj dec 929 if or < -2062
+d inc -590 if f <= -239
+d inc 392 if bt != 3962
+sp dec -991 if f >= -246
+f inc 367 if liq != 1052
+clj inc -262 if mu < 1079
+hwv inc -283 if ino == -938
+or inc -454 if mu <= 1083
+l dec 679 if mvh <= -2636
+gnz dec 796 if gnz != 6706
+sp inc -243 if sp < 1622
+or inc 18 if q <= -1038
+cto inc -384 if ino != -938
+uc inc -367 if ino != -940
+ooh dec -948 if nm != 4342
+hwv dec -601 if q < -1024
+sp dec -455 if vv != -3536
+bt dec 644 if ly <= -3255
+ooh dec -836 if ooh >= 2017
+ino dec 181 if sp >= 1828
+jp dec -89 if ooh == 2011
+mu dec 248 if bt == 3970
+clj inc 713 if sp < 1831
+uix inc -148 if l < -3173
+w dec -570 if jp != 1551
+jp inc -297 if bt < 3977
+gnz inc -414 if t >= -973
+uc inc 569 if w >= 1890
+vv dec -776 if cto > -662
+ly dec -904 if t == -974
+ooh dec -425 if gnz <= 5914
+sp inc 740 if cto != -646
+w dec -53 if bt >= 3969
+mu dec -122 if d <= 3794
+jp inc -552 if liq < 1039
+or dec -670 if cto < -646
+d inc -154 if q > -1026
+jp dec 419 if vv <= -2766
+mu dec -340 if sp <= 2578
+uc dec -474 if bt != 3975
+uix inc -92 if uc <= -2298
+cto dec 651 if liq != 1037
+d dec 480 if d == 3785
+l inc -514 if vv > -2779
+f inc 876 if bt > 3966
+bt dec 20 if uc >= -2307
+f dec 219 if hwv <= 657
+ly dec -128 if d <= 3311
+t inc -476 if sp < 2579
+ino dec 641 if cto < -1313
+l inc 70 if l == -3691
+ly inc -876 if liq != 1051
+cto inc 414 if clj >= -2588
+mvh dec 973 if jp > 833
+nm inc 452 if uc <= -2298
+uix dec 185 if hwv <= 662
+nm dec -740 if d >= 3301
+cto inc -292 if ly == -3091
+mvh inc -639 if q == -1032
+ino inc -858 if q <= -1024
+ino inc 268 if uc <= -2296
+mvh dec -117 if uix > -2912
+f inc 436 if mvh == -4142
+bt dec -330 if q <= -1025
+t dec 350 if ooh == 2428
+w inc 525 if vv == -2769
+ooh dec 382 if uix == -2902
+bt inc 789 if noj >= 1741
+jp dec 616 if mvh <= -4136
+liq inc 325 if q <= -1031
+clj inc -900 if t <= -1444
+q dec 943 if uix < -2900
+nm inc -808 if gnz > 5911
+hwv inc 253 if jp != 213
+mvh inc 584 if sp > 2562
+noj inc -44 if t <= -1446
+uc dec 11 if ly != -3088
+l dec -712 if l <= -3622
+liq dec 11 if uc > -2318
+ly inc -771 if w > 2484
+f dec 29 if l < -3620
+gnz inc -595 if ooh >= 2047
+noj dec -566 if hwv <= 911
+jp inc -161 if liq < 1361
+ino inc -887 if uc > -2310
+d inc -642 if mvh <= -3548
+hwv inc -117 if ly <= -3082
+f dec -670 if hwv > 783
+vv dec 459 if ino >= -2590
+w dec -524 if vv != -2765
+noj inc 465 if l != -3620
+or dec -177 if cto == -1596
+jp inc 154 if f > 1418
+uix dec -101 if d != 2660
+ly inc 566 if mu == 1297
+ooh dec 83 if ly <= -2534
+noj dec 735 if vv < -2774
+ino dec 38 if t <= -1446
+nm dec -63 if uc > -2317
+hwv dec 838 if uc == -2309
+t dec 402 if mu < 1303
+cto dec -987 if ly < -2526
+hwv dec 140 if noj != 2723
+ly inc 262 if vv != -2766
+mu dec 933 if ooh < 2056
+ooh dec -304 if vv == -2769
+ooh inc 669 if cto < -1595
+bt dec 456 if sp >= 2570
+mu dec -857 if mu >= 360
+mvh dec 288 if jp < 221
+d dec 575 if uc < -2305
+l dec -265 if cto > -1606
+nm inc -600 if liq > 1354
+hwv inc 707 if ooh <= 3030
+clj dec -560 if or == -1851
+clj dec -373 if bt > 4618
+vv dec -417 if mu >= 1219
+vv inc -274 if gnz > 5306
+uix dec 854 if cto != -1598
+noj dec -179 if f != 1421
+jp inc -806 if sp <= 2572
+f inc 424 if gnz != 5318
+hwv dec 53 if liq < 1351
+l dec 743 if bt < 4617
+sp dec -118 if q < -1974
+l inc -126 if f > 1854
+uix dec 938 if nm != 4997
+t inc -497 if l >= -4101
+f dec -516 if jp != -587
+q dec -464 if hwv > 519
+q inc -268 if l == -4099
+ly inc 325 if or == -1851
+l inc 243 if mu < 1226
+cto dec 782 if t <= -2349
+w inc 59 if ly < -1929
+jp dec 12 if cto > -2389
+l inc -367 if ly > -1932
+sp dec -136 if sp <= 2683
+jp dec 682 if mvh != -3851
+cto dec -4 if cto >= -2385
+uc dec 160 if vv != -2630
+ooh inc -788 if or >= -1849
+or inc 174 if mvh >= -3850
+clj dec 985 if vv >= -2627
+nm dec -552 if mu >= 1224
+uix inc -513 if w >= 3067
+ly inc 218 if noj >= 2728
+uc inc -214 if ly > -1725
+l inc 861 if ly > -1730
+gnz inc -883 if t < -2344
+l dec 967 if cto != -2375
+f inc -449 if cto > -2384
+mvh dec 121 if ooh > 3026
+ino inc 35 if ly == -1720
+ino inc 194 if mvh < -3970
+l inc 336 if uix != -4594
+l dec 346 if or != -1670
+mvh dec -470 if t > -2351
+clj dec -209 if liq >= 1349
+uix dec -659 if jp >= -1289
+t dec 232 if or == -1674
+ly dec -777 if ly < -1726
+q inc -492 if bt != 4622
+nm inc -323 if uc == -2683
+mu inc -959 if vv != -2626
+cto inc 943 if uc == -2683
+jp dec -286 if bt < 4618
+f inc -909 if jp != -1002
+ooh dec 547 if jp >= -1010
+t dec -508 if w != 3058
+bt inc -935 if w < 3068
+jp dec 484 if mvh <= -3495
+f dec 608 if f != 1007
+or dec 392 if gnz > 4423
+uix dec -261 if hwv <= 520
+uix inc 958 if cto > -1438
+nm inc 723 if clj < -3715
+uix inc -970 if sp == 2688
+cto inc 485 if cto <= -1431
+l inc 96 if nm != 4669
+uix dec -928 if hwv <= 527
+noj dec 605 if mu != 1229
+l dec 763 if ooh < 2486
+t inc -814 if nm <= 4674
+gnz inc -182 if t == -3163
+t dec 544 if hwv <= 525
+gnz dec 928 if uix == -2757
+cto inc 381 if mu < 1227
+bt inc -344 if bt >= 3669
+nm dec -833 if or != -2063
+clj inc 69 if hwv == 511
+cto inc 101 if uc <= -2674
+cto inc -914 if f >= 395
+bt dec 808 if q == -2271
+sp dec -420 if f < 397
+nm dec -401 if noj > 2129
+jp dec 732 if vv == -2626
+w inc -62 if liq >= 1358
+uix inc 395 if gnz < 3327
+cto dec 512 if ino > -2607
+clj dec 546 if gnz > 3312
+noj inc 505 if or > -2074
+jp dec -391 if noj >= 2629
+liq dec -434 if q <= -2267
+ly inc -900 if clj == -4255
+l dec -567 if clj > -4263
+mvh inc 506 if cto >= -1895
+d inc 363 if l >= -3095
+ly inc -145 if ly >= -2624
+or dec 451 if ly >= -2770
+uc dec 705 if d < 2090
+w dec -574 if uix == -2362
+hwv inc 586 if cto > -1899
+uix dec 851 if clj >= -4264
+uix inc -531 if noj <= 2637
+hwv dec 523 if t >= -3714
+w dec 225 if bt > 2516
+nm dec -181 if ino <= -2597
+t dec 970 if sp != 3110
+q dec 369 if hwv <= 586
+w dec -92 if nm == 5684
+noj inc -838 if uix != -3749
+or dec 381 if cto > -1894
+uix dec 930 if jp > -1348
+mvh dec -685 if f < 405
+clj inc 985 if bt < 2535
+q dec 203 if ino >= -2604
+mu dec 516 if hwv > 581
+l inc -372 if w == 3437
+w dec 804 if q != -2834
+d dec -276 if f <= 396
+vv dec -640 if or > -2910
+vv dec 613 if noj > 1789
+clj inc 304 if bt < 2529
+bt dec -800 if jp >= -1339
+uc dec -718 if l == -3477
+liq inc 589 if vv == -2599
+t inc 260 if gnz != 3324
+ooh dec 313 if mu < 698
+liq dec 530 if q <= -2843
+t inc 460 if ly <= -2764
+ly dec 155 if mu >= 710
+jp inc 217 if ooh == 2480
+t dec -810 if uix < -4669
+ooh dec 785 if clj != -2963
+l dec -700 if hwv > 579
+ooh inc 609 if sp <= 3110
+uix inc -979 if cto == -1883
+l dec -996 if hwv == 583
+d dec -79 if f >= 388
+uix dec -379 if noj < 1800
+clj dec -385 if f <= 401
+ino dec 669 if uc >= -2679
+hwv inc -238 if q < -2844
+t inc 449 if mu > 701
+bt dec 538 if ino < -3262
+w dec 615 if hwv == 583
+liq inc 845 if bt > 1986
+nm dec -165 if ooh == 2304
+t inc -927 if t < -2695
+mvh dec 416 if noj == 1791
+gnz dec -441 if vv > -2603
+w dec 438 if hwv < 575
+t inc 585 if nm >= 5842
+uix inc 919 if noj > 1785
+clj inc -411 if liq < 2695
+or inc 157 if clj >= -2589
+vv inc -878 if cto <= -1896
+or inc 190 if gnz > 3765
+l dec 367 if uix >= -3376");
             Console.ReadLine();
         }
     }
