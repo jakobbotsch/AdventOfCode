@@ -36,6 +36,11 @@ namespace AdventOfCode
 
         public static void Solve2(string input)
         {
+            Console.WriteLine(BitConverter.ToString(KnotHash(input)).Replace("-", "").ToLowerInvariant());
+        }
+
+        public static byte[] KnotHash(string input)
+        {
             byte[] bytes = Encoding.ASCII.GetBytes(input).Concat(new byte[] { 17, 31, 73, 47, 23 }).ToArray();
 
             int curPos = 0;
@@ -55,7 +60,7 @@ namespace AdventOfCode
             for (int i = 0; i < 16; i++)
                 dense.Add((byte)list.Skip(i * 16).Take(16).Aggregate((cur, elem) => cur ^ elem));
 
-            Console.WriteLine(BitConverter.ToString(dense.ToArray()).Replace("-", "").ToLowerInvariant());
+            return dense.ToArray();
         }
     }
 }
