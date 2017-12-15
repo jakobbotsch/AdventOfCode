@@ -6,7 +6,7 @@ namespace AdventOfCode
     {
         internal static void Main(string[] args)
         {
-            Day14.Solve(@"hfdlxzhv");
+            Day15.Solve(873, 583);
             Console.ReadLine();
         }
     }
