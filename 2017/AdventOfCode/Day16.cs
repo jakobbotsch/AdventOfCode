@@ -8,22 +8,20 @@ namespace AdventOfCode
     {
         public static void Solve(string input)
         {
-            string curProg = "abcdefghijklmnop";
+            char[] progs = "abcdefghijklmnop".ToCharArray();
             string[] insts = input.Split(',');
-            Dictionary<string, string> cache = new Dictionary<string, string>();
+            Dictionary<string, int> seen = new Dictionary<string, int>();
 
             for (int times = 0; times < 1000000000; times++)
             {
-                if (times % 100000 == 0)
-                    Console.Title = $"{times}";
-
-                if (cache.TryGetValue(curProg, out string newProg))
+                if (seen.TryGetValue(new string(progs), out int seenIters))
                 {
-                    curProg = newProg;
-                    continue;
+                    int cycleLen = times - seenIters;
+                    times += (1000000000 - times) / cycleLen * cycleLen;
                 }
+                else
+                    seen.Add(new string(progs), times);
 
-                char[] progs = curProg.ToCharArray();
                 foreach (string inst in insts)
                 {
                     if (inst[0] == 's')
@@ -69,16 +67,11 @@ namespace AdventOfCode
                     }
                 }
 
-                newProg = new string(progs);
-
                 if (times == 0)
-                    Console.WriteLine(newProg);
-
-                cache.Add(curProg, newProg);
-                curProg = newProg;
+                    Console.WriteLine(new string(progs));
             }
 
-            Console.WriteLine(curProg);
+            Console.WriteLine(new string(progs));
         }
     }
 }
