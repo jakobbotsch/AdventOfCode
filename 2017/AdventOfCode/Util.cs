@@ -13,7 +13,7 @@ namespace AdventOfCode
 
         public static int[] GetInts(string line)
         {
-            return Regex.Matches(line, "[0-9]+").OfType<Match>().Select(m => int.Parse(m.Value)).ToArray();
+            return Regex.Matches(line, "(-)?[0-9]+").OfType<Match>().Select(m => int.Parse(m.Value)).ToArray();
         }
     }
 }
