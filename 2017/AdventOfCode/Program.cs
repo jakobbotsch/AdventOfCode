@@ -6,63 +6,68 @@ namespace AdventOfCode
     {
         internal static void Main(string[] args)
         {
-            Day24.Solve(@"14/42
-2/3
-6/44
-4/10
-23/49
-35/39
-46/46
-5/29
-13/20
-33/9
-24/50
-0/30
-9/10
-41/44
-35/50
-44/50
-5/11
-21/24
-7/39
-46/31
-38/38
-22/26
-8/9
-16/4
-23/39
-26/5
-40/40
-29/29
-5/20
-3/32
-42/11
-16/14
-27/49
-36/20
-18/39
-49/41
-16/6
-24/46
-44/48
-36/4
-6/6
-13/6
-42/12
-29/41
-39/39
-9/3
-30/2
-25/20
-15/6
-15/23
-28/40
-8/7
-26/23
-48/10
-28/28
-2/13
-48/14");
+            Day25.Solve(@"Begin in state A.
+Perform a diagnostic checksum after 12459852 steps.
+
+In state A:
+  If the current value is 0:
+    - Write the value 1.
+    - Move one slot to the right.
+    - Continue with state B.
+  If the current value is 1:
+    - Write the value 1.
+    - Move one slot to the left.
+    - Continue with state E.
+
+In state B:
+  If the current value is 0:
+    - Write the value 1.
+    - Move one slot to the right.
+    - Continue with state C.
+  If the current value is 1:
+    - Write the value 1.
+    - Move one slot to the right.
+    - Continue with state F.
+
+In state C:
+  If the current value is 0:
+    - Write the value 1.
+    - Move one slot to the left.
+    - Continue with state D.
+  If the current value is 1:
+    - Write the value 0.
+    - Move one slot to the right.
+    - Continue with state B.
+
+In state D:
+  If the current value is 0:
+    - Write the value 1.
+    - Move one slot to the right.
+    - Continue with state E.
+  If the current value is 1:
+    - Write the value 0.
+    - Move one slot to the left.
+    - Continue with state C.
+
+In state E:
+  If the current value is 0:
+    - Write the value 1.
+    - Move one slot to the left.
+    - Continue with state A.
+  If the current value is 1:
+    - Write the value 0.
+    - Move one slot to the right.
+    - Continue with state D.
+
+In state F:
+  If the current value is 0:
+    - Write the value 1.
+    - Move one slot to the right.
+    - Continue with state A.
+  If the current value is 1:
+    - Write the value 1.
+    - Move one slot to the right.
+    - Continue with state C.");
             Console.ReadLine();
         }
     }
