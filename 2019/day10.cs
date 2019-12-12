@@ -46,7 +46,6 @@ namespace AdventOfCode
             Console.WriteLine(best);
 
             (int pulvx, int pulvy) = FirstHit(map, bestx, besty, bestx, 0);
-            int quadrant = 0;
             int hit = 0;
             while (true)
             {
