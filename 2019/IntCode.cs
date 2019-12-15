@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Text;
+using System.Threading.Channels;
 using System.Threading.Tasks;
 using System.Threading.Tasks.Dataflow;
 
@@ -10,7 +11,7 @@ namespace AdventOfCode
 {
     internal static class IntCode
     {
-        public static async Task RunAsync(long[] mem, BufferBlock<long> inputs, BufferBlock<long> outputs)
+        public static async Task RunAsync(long[] mem, ChannelReader<long> inputs, ChannelWriter<long> outputs)
         {
             mem = mem.Concat(Enumerable.Repeat(0L, 1024 * 1024)).ToArray();
             long ip = 0;
@@ -43,12 +44,12 @@ namespace AdventOfCode
                         ip += 4;
                         break;
                     case 3:
-                        long input = await inputs.ReceiveAsync();
+                        long input = await inputs.ReadAsync();
                         GetParam(0) = input;
                         ip += 2;
                         break;
                     case 4:
-                        outputs.Post(GetParam(0));
+                        await outputs.WriteAsync(GetParam(0));
                         ip += 2;
                         break;
                     case 5:
@@ -76,6 +77,7 @@ namespace AdventOfCode
                         ip += 2;
                         break;
                     case 99:
+                        outputs.Complete();
                         return;
                     default:
                         Trace.Fail("Oh shit " + mem[ip]);
