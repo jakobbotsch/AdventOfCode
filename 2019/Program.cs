@@ -7,7 +7,7 @@ namespace AdventOfCode
     {
         static async Task Main(string[] args)
         {
-            Day16.Solve();
+            await Day17.SolveAsync();
         }
     }
 }
