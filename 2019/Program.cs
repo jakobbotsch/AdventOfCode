@@ -5,9 +5,9 @@ namespace AdventOfCode
 {
     class Program
     {
-        static async Task Main(string[] args)
+        static void Main(string[] args)
         {
-            await Day17.SolveAsync();
+            Day18.Solve();
         }
     }
 }
