@@ -11,9 +11,15 @@ namespace AdventOfCode
 {
     internal static class IntCode
     {
-        public static async Task RunAsync(long[] mem, ChannelReader<long> inputs, ChannelWriter<long> outputs)
+        public static Task RunAsync(long[] prog, ChannelReader<long> inputs, ChannelWriter<long> outputs)
         {
-            mem = mem.Concat(Enumerable.Repeat(0L, 1024 * 1024)).ToArray();
+            long[] mem = new long[1024 * 20];
+            Array.Copy(prog, 0, mem, 0, prog.Length);
+            return RunAsyncWithMem(mem, inputs, outputs);
+        }
+
+        public static async Task RunAsyncWithMem(long[] mem, ChannelReader<long> inputs, ChannelWriter<long> outputs)
+        {
             long ip = 0;
             long relBase = 0;
             while (true)
