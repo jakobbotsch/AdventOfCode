@@ -3,11 +3,11 @@ using System.Threading.Tasks;
 
 namespace AdventOfCode
 {
-    class Program
+    internal class Program
     {
-        static async Task Main(string[] args)
+        private static void Main(string[] args)
         {
-            await Day23.SolveAsync();
+            Day24.Solve();
         }
     }
 }
