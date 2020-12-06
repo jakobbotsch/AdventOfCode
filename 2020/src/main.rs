@@ -1,11 +1,19 @@
+#![feature(str_split_once)]
+extern crate regex;
+
 use std::fs::File;
 use std::io::{self, BufRead};
 use std::path::Path;
 
 mod day1;
+mod day2;
+mod day3;
+mod day4;
+mod day5;
+mod day6;
 
 fn main() {
-    day1::solve(&read_lines("day1.txt"))
+    day6::solve(&read_lines("day6.txt"))
 }
 
 fn read_lines<P>(filename: P) -> Vec<String>
