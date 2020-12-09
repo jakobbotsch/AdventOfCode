@@ -1,4 +1,3 @@
-use regex::Regex;
 use std::collections::{HashSet, HashMap};
 
 #[derive(Debug, Clone)]
