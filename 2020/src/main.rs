@@ -14,9 +14,10 @@ mod day6;
 mod day7;
 mod day8;
 mod day9;
+mod day10;
 
 fn main() {
-    day9::solve(&read_lines("day9.txt"))
+    day10::solve(&read_lines("day10.txt"))
 }
 
 fn read_lines<P>(filename: P) -> Vec<String>
