@@ -1,5 +1,3 @@
-use std::convert::TryInto;
-
 pub fn solve(lines: &Vec<String>) {
     let first_state: Vec<Vec<u8>> =
         lines.iter()
@@ -30,7 +28,7 @@ pub fn solve(lines: &Vec<String>) {
             }
         }
 
-        if new_state.cmp(&state) == std::cmp::Ordering::Equal {
+        if new_state == state {
             println!("{}", state.iter().map(|l| l.iter().filter(|&&b| b == b'#').count()).sum::<usize>());
             break
         }
@@ -82,7 +80,7 @@ pub fn solve(lines: &Vec<String>) {
             }
         }
 
-        if new_state.cmp(&state) == std::cmp::Ordering::Equal {
+        if new_state == state {
             println!("{}", state.iter().map(|l| l.iter().filter(|&&b| b == b'#').count()).sum::<usize>());
             break
         }
